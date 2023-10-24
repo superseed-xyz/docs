@@ -1,7 +1,7 @@
 {
-  "name": "nextra-docs-template",
+  "name": "arkantum-docs",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "Arkantum docs",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
+    "url": "git+https://github.com/arkantum-labs/docs.git"
   },
-  "author": "Shu Ding <g@shud.in>",
+  "author": "Nick Oprisan <nick@arkantum.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
+    "url": "https://github.com/arkantum-labs/docs/issues"
   },
-  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
+  "homepage": "https://github.com/arkantum-labs/docs#readme",
   "dependencies": {
     "next": "^13.0.6",
     "nextra": "latest",
