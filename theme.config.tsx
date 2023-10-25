@@ -5,7 +5,7 @@ import ArkantumLogo from "./components/arkantum-logo";
 const config: DocsThemeConfig = {
   logo: <ArkantumLogo />,
   project: {
-    link: "https://github.com/arkantum-labs/docs",
+    link: "https://github.com/arkantum-labs",
   },
   chat: {
     link: "https://discord.gg/PqJraGqr",
