@@ -1,18 +1,19 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import React from "react";
+import { DocsThemeConfig } from "nextra-theme-docs";
+import ArkantumLogo from "./components/arkantum-logo";
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <ArkantumLogo />,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: "https://github.com/arkantum-labs",
   },
   chat: {
-    link: 'https://discord.com',
+    link: "https://discord.gg/PqJraGqr",
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: "https://github.com/arkantum-labs/docs",
   footer: {
-    text: 'Nextra Docs Template',
+    text: "",
   },
-}
+};
 
-export default config
+export default config;

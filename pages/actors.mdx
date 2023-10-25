@@ -1,0 +1,37 @@
+# Actors
+
+There are three types of actors in the Arkantum ecosystem.
+
+## Users
+
+There are 2 categories of Users, builders and app consumers.
+
+The builders will typically deploy contracts and deploy dApps while the app consumers will typically use these dApps.
+
+This group consists of parties that use this blockchain either through a wallet (like Metamask), a multisig (like the Safe — formerly Gnosis Safe), or a dApp.
+
+Members of this group can send tokens or ETH to other users.
+
+They can also interact with contracts by sending transactions to the Layer 2 blockchain.
+
+## Sequencers
+
+The sequencer, acting as the principal block producer, plays a pivotal role in transaction management and block production. While the 1.0.0 version operates with a single sequencer under the Arkantum DAO's oversight, future iterations may employ multiple sequencers through a consensus protocol.
+
+Key Responsibilities of the Sequencer:
+
+1. **Off-chain Transaction Management:** Accepts and manages user transactions executed off-chain.
+2. **On-chain Transaction Monitoring:** Monitors on-chain transactions, focusing on deposit events from L1.
+3. **Transaction Consolidation:** Merges off-chain and on-chain transactions into organized L2 blocks.
+4. **L2 Block Propagation to L1:** Submits consolidated L2 blocks to L1, including pending off-chain transactions and requisite information to reconstruct the transaction order from L1 observations.
+
+Furthermore, the sequencer facilitates access to block data as early as the consolidation phase, offering users the option to access the real-time state prior to L1 confirmation.
+
+## Verifiers
+
+Important within the network infrastructure, verifiers, ensuring integrity and accessibility, execute two paramount functions:
+
+1. **Data Provision:** They facilitate user access by serving Layer 2 data.
+2. **Integrity Assurance:** They validate Layer 2 integrity and challenge invalid assertions.
+
+Preserving network security necessitates **at least** one honest verifier, tasked with safeguarding the integrity of Layer 2 and ensuring the reliable dissemination of blockchain data to users. This verifier acts as a shield against potential discrepancies and sustains the unbroken availability of user data.
