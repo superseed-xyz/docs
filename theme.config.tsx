@@ -10,9 +10,27 @@ const config: DocsThemeConfig = {
   chat: {
     link: "https://discord.gg/PqJraGqr",
   },
-  docsRepositoryBase: "https://github.com/arkantum-labs/docs",
+  editLink: {
+    text: 'Edit this page on GitHub →'
+  },
+  feedback: {
+    content: 'Submit an issue on Github →',
+    labels: 'feedback'
+  },
+  docsRepositoryBase: "https://github.com/arkantum-labs/docs/tree/main",
   footer: {
-    text: "",
+    text: (
+      <span>
+        MIT {new Date().getFullYear()} ©{" "}
+        <a href="https://arkantum.com" target="_blank">
+          Arkantum Labs
+        </a>
+        .
+      </span>
+    ),
+  },
+  sidebar: {
+    toggleButton: true,
   },
 };
 
