@@ -1,15 +1,27 @@
 {
+  "-- Introduction": {
+    "type": "separator",
+    "title": "Introduction"
+  },
   "index": "About Arkantum",
   "optimistic-rollups": "Optimistic Rollups",
+  "-- Layer 2": {
+    "type": "separator",
+    "title": "Layer 2"
+  },
   "differences-compared-to-ethereum": "Differences compared to Ethereum",
   "decentralisation": "Decentralisation",
   "actors": "Actors",
   "system-components": "System Components",
   "transaction-fees": "Transaction Fees",
+  "-- More": {
+    "type": "separator",
+    "title": "More"
+  },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://x.com/arkantumlabs",
+    "href": "mailto:gm@arkantum.com",
     "newWindow": true
   }
 }
