@@ -18,6 +18,12 @@ const config: DocsThemeConfig = {
     labels: 'feedback'
   },
   docsRepositoryBase: "https://github.com/arkantum-labs/docs/tree/main",
+  useNextSeoProps: () => ({titleTemplate: '%s - Arkantum Docs'}),
+  head: (
+    <>
+      <link rel="favicon" href="favicon/favicon.ico" />
+    </>
+  ),
   footer: {
     text: (
       <span>
