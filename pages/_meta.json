@@ -1,15 +1,51 @@
 {
-  "index": "About Arkantum",
-  "optimistic-rollups": "Optimistic Rollups",
-  "differences-compared-to-ethereum": "Differences compared to Ethereum",
-  "decentralisation": "Decentralisation",
-  "actors": "Actors",
-  "system-components": "System Components",
-  "transaction-fees": "Transaction Fees",
+  "-- Introduction": {
+    "type": "separator",
+    "title": "Introduction"
+  },
+  "index":{
+    "title": "Welcome"
+  },
+  "about-us": {
+    "title": "About Us"
+  },
+  "-- Users": {
+    "type": "separator",
+    "title": "Users"
+  },
+  "using-arkantum": {
+    "title": "Using Arkantum"
+  },
+  "-- Builders": {
+    "type": "separator",
+    "title": "Builders"
+  },
+  "build-on-arkantum": {
+    "title": "Build on Arkantum"
+  },
+  "integrations": {
+    "title": "Integrations"
+  },
+  "tokens": {
+    "title": "Tokens"
+  },
+  "-- External": {
+    "type": "separator",
+    "title": "External"
+  },
+  "status": {
+    "title": "System Status"
+  },
+  "op-stack": {
+    "title": "Built on the OP Stack ↗",
+    "type": "page",
+    "href": "https://stack.optimism.io/",
+    "newWindow": true
+  },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://x.com/arkantumlabs",
+    "href": "mailto:gm@arkantum.com",
     "newWindow": true
   }
 }
