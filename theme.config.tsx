@@ -11,14 +11,14 @@ const config: DocsThemeConfig = {
     link: "https://discord.gg/PqJraGqr",
   },
   editLink: {
-    text: 'Edit this page on GitHub →'
+    text: "Edit this page on GitHub →",
   },
   feedback: {
-    content: 'Submit an issue on Github →',
-    labels: 'feedback'
+    content: "Submit an issue on Github →",
+    labels: "feedback",
   },
   docsRepositoryBase: "https://github.com/arkantum-labs/docs/tree/main",
-  useNextSeoProps: () => ({titleTemplate: '%s - Arkantum Docs'}),
+  useNextSeoProps: () => ({ titleTemplate: "%s - Arkantum Docs" }),
   head: (
     <>
       <link rel="favicon" href="favicon/favicon.ico" />
