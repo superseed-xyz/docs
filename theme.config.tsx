@@ -1,6 +1,6 @@
 import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
-import ArkantumLogo from "./components/arkantum-logo";
+import ArkantumLogo from "./components/logos/arkantum-logo";
 
 const config: DocsThemeConfig = {
   logo: <ArkantumLogo />,

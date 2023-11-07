@@ -1,0 +1,36 @@
+# Differences compared to Ethereum
+
+Arkantum is built on the [Bedrock](https://stack.optimism.io/docs/releases/bedrock/explainer/) release of the [OP Stack](https://stack.optimism.io/), which aims to closely resemble Ethereum. As a result, there are few differences between building on Arkantum and Ethereum. However, it’s important to keep in mind these differences when developing apps on Arkantum. These differences include:
+
+## Opcodes
+
+| Opcode | Solidity equivalent | Behavior |
+| --- | --- | --- |
+| COINBASE | block.coinbase | Undefined |
+| DIFFICULTY | block.difficulty | Random value. As this value is set by the sequencer, it is not as reliably random as the L1 equivalent. |
+| NUMBER | block.number | L2 block number |
+| TIMESTAMP | block.timestamp | L2 block timestamp |
+| ORIGIN | tx.origin | If the transaction is an L1 ⇒ L2 transaction, then tx.origin is set to the https://stack.optimism.io/docs/releases/bedrock/differences/#address-aliasing of the address that triggered transaction. Otherwise, this opcode behaves normally. |
+| CALLER | msg.sender | If the transaction is an L1 ⇒ L2 transaction, and this is the initial call rather than an internal transaction, the same https://stack.optimism.io/docs/releases/bedrock/differences/#address-aliasing behavior applies. |
+
+## Blocks
+
+| Parameter | L1 Ethereum | Arkantum |
+| --- | --- | --- |
+| Time between blocks | 12 seconds | 2 seconds |
+| Block target size | 15,000,000 gas | 🚧 Under construction |
+| Block maximum size | 30,000,000 gas | 🚧 Under construction |
+
+## Network specifications
+
+### JSON-RPC differences
+
+OP Stack codebase uses the same **[JSON-RPC API](https://eth.wiki/json-rpc/API)** as Ethereum. Some additional OP Stack specific methods have been introduced. See the full list of **[custom JSON-RPC methods](https://community.optimism.io/docs/developers/build/json-rpc/)** for more information.
+
+### Pre-EIP-155 support
+
+**[Pre-EIP-155](https://eips.ethereum.org/EIPS/eip-155)** transactions do not have a chain ID, which means a transaction on one Ethereum blockchain can be replayed on others. This is a security risk, so pre-EIP-155 transactions are not supported on OP Stack by default.
+
+## Transaction fees
+
+Transaction fees on OP Stack chains, by default, [](https://community.optimism.io/docs/developers/build/transaction-fees/)include an L2 execution fee and an L1 data fee as explained in the Transaction Fees page.
