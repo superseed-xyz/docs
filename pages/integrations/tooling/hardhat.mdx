@@ -21,19 +21,19 @@ const config: HardhatUserConfig = {
   networks: {
     // For Arkantum Mainnet
     "arkantum-mainnet": {
-      url: "<https://mainnet.arkantum.org>",
+      url: "https://mainnet.arkantum.org",
       accounts: [process.env.WALLET_KEY as string],
       gasPrice: 1000000000,
     },
     // For Arkantum Sepolia Testnet
     "arkantum-sepolia": {
-      url: "<https://sepolia.arkantum.org>",
+      url: "https://sepolia.arkantum.org",
       accounts: [process.env.PRIVATE_KEY as string],
       gasPrice: 1000000000,
     },
     // For local development environment
     "arkantum-local": {
-      url: "<http://localhost:8545>",
+      url: "http://localhost:8545",
       accounts: [process.env.PRIVATE_KEY as string],
       gasPrice: 1000000000,
     },
