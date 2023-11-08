@@ -1,13 +1,13 @@
 {
-  "-- Introduction": {
+  "-- Getting Started": {
     "type": "separator",
-    "title": "Introduction"
+    "title": "Getting Started"
   },
   "index":{
     "title": "Welcome"
   },
-  "about-us": {
-    "title": "About Us"
+  "introduction": {
+    "title": "Introduction"
   },
   "-- Users": {
     "type": "separator",
