@@ -70,7 +70,7 @@ const config: DocsThemeConfig = {
     link: "https://github.com/arkantum-labs",
   },
   chat: {
-    link: "https://discord.gg/PqJraGqr",
+    link: "https://discord.gg/d39Vx6Nm",
   },
   editLink: {
     text: "Edit this page on GitHub →",
