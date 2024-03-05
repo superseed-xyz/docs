@@ -13,15 +13,15 @@
     "type": "separator",
     "title": "Users"
   },
-  "using-arkantum": {
-    "title": "Using Arkantum"
+  "using-superseed": {
+    "title": "Using Superseed"
   },
   "-- Builders": {
     "type": "separator",
     "title": "Builders"
   },
-  "build-on-arkantum": {
-    "title": "Build on Arkantum"
+  "build-on-superseed": {
+    "title": "Build on Superseed"
   },
   "integrations": {
     "title": "Integrations"

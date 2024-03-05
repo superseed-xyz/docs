@@ -1,6 +1,6 @@
-# Arkantum Docs
+# Superseed Docs
 
-This repository contains the source code for Arkantum Docs.
+This repository contains the source code for Superseed Docs.
 
 ## Local Development
 
