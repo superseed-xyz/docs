@@ -33,7 +33,7 @@ const config: DocsThemeConfig = {
     link: "https://github.com/arkantum-labs",
   },
   chat: {
-    link: "https://discord.gg/d39Vx6Nm",
+    link: "https://discord.gg/vjDDB5S4BN",
   },
   editLink: {
     text: "Edit this page on GitHub →",
@@ -43,7 +43,7 @@ const config: DocsThemeConfig = {
     labels: "feedback",
   },
   docsRepositoryBase: "https://github.com/arkantum-labs/docs/tree/main",
-  useNextSeoProps: () => ({ titleTemplate: "%s - Arkantum Docs" }),
+  useNextSeoProps: () => ({ titleTemplate: "%s - Superseed Docs" }),
   head: (
     <>
       <link rel="favicon" href="favicon/favicon.ico" />
