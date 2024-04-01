@@ -1,0 +1,32 @@
+{
+  "rpc-node-providers": {
+    "title": "RPC Node Providers"
+  },
+  "block-explorers": {
+    "title": "Block Explorers"
+  },
+  "faucets": {
+    "title": "Faucets"
+  },
+  "data-providers": {
+    "title": "Data Providers"
+  },
+  "interchain": {
+    "title": "Interchain Communication"
+  },
+  "oracles": {
+    "title": "Oracles"
+  },
+  "onramps": {
+    "title": "Onramps"
+  },
+  "bridges": {
+    "title": "Bridges"
+  },
+  "clients": {
+    "title": "Clients"
+  },
+  "tooling": {
+    "title": "Tooling"
+  }
+}

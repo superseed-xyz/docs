@@ -1,0 +1,51 @@
+{
+  "-- Getting Started": {
+    "type": "separator",
+    "title": "Getting Started"
+  },
+  "index":{
+    "title": "Welcome"
+  },
+  "introduction": {
+    "title": "Introduction"
+  },
+  "-- Users": {
+    "type": "separator",
+    "title": "Users"
+  },
+  "using-superseed": {
+    "title": "Using Superseed"
+  },
+  "-- Builders": {
+    "type": "separator",
+    "title": "Builders"
+  },
+  "build-on-superseed": {
+    "title": "Build on Superseed"
+  },
+  "integrations": {
+    "title": "Integrations"
+  },
+  "tokens": {
+    "title": "Tokens"
+  },
+  "-- External": {
+    "type": "separator",
+    "title": "External"
+  },
+  "status": {
+    "title": "System Status"
+  },
+  "op-stack": {
+    "title": "Built on the OP Stack ↗",
+    "type": "page",
+    "href": "https://stack.optimism.io/",
+    "newWindow": true
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "mailto:gm@arkantum.com",
+    "newWindow": true
+  }
+}

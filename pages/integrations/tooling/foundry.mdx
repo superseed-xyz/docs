@@ -1,0 +1,47 @@
+import { Callout } from "nextra/components";
+
+# The Foundry Toolchain
+
+<Callout emoji="🚧">
+  **The RPC URLs are not available at this moment.** They will become available
+  after the launch of the Testnet and Mainnet respectively.
+</Callout>
+
+The **Foundry** toolchain stands as a cutting-edge suite of tools for smart contract development. Crafted in Rust, it offers a flexible and component-based approach to building Ethereum applications.
+
+Foundry enables you to handle project dependencies, compile your work, execute tests, deploy contracts, and engage with the blockchain through command-line instructions or Solidity scripts.
+
+To begin your journey with Foundry in the Superseed ecosystem, explore the [Foundry Book](https://book.getfoundry.sh/).
+
+## Leveraging Foundry for Superseed Development
+
+Developers aiming to integrate Foundry with the Superseed ecosystem will find the process straightforward and tailored for ease of use.
+
+Ensure you provide the correct Superseed RPC URL and Chain ID to effectively deploy and verify contracts within your development pipeline.
+
+### Superseed Mainnet
+
+- **Smart Contract Deployment:**
+  ```bash
+  forge create ... --rpc-url=https://mainnet.superseed.xyz/ --chain-id 5330
+  ```
+- **Smart Contract Verification:**
+  ```bash
+  forge verify-contract ... --chain-id 5330
+  ```
+
+### Superseed Sepolia Testnet
+
+- **Smart Contract Deployment:**
+  ```bash
+  forge create ... --rpc-url=https://sepolia.superseed.xyz/ --chain-id 53302
+  ```
+- **Smart Contract Verification:**
+  ```bash
+  forge verify-contract ... --chain-id 53302
+  ```
+
+<Callout type="info" emoji="ℹ️">
+  Substitute the `...` in each command with your specific contract parameters or
+  additional options to align with the requirements of your project.
+</Callout>
