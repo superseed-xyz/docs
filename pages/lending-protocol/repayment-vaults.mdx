@@ -1,0 +1,22 @@
+# Repayment Vaults
+
+One of the core stabilization modules for the Superseed Lending Protocol are Repayment Vaults. While borrowers who wish to manually repay their loans can do so directly and thus burn the stablecoin they minted previously as a loan, for supercollateral borrowers who benefit from self repaying loans, the fees that are used for repayment will first go into a smart contract called a repayment vault which then programmatically burns the debt of supercollateral users on a pro-rata basis following a pre defined schedule. 
+
+There will be multiple types of repayment vaults, each with a different repayment schedule. 
+
+1. One week repayment vault 
+2. One month repayment vault
+3. One year repayment vault
+4. Four years repayment vault
+
+The benefits of Repayment vaults are that they decrease the volatility of the repayment rate by following a programatic schedule for burning the debt of supercollateral borrowers. Additionally RV (repayment vaults) are a stablecoin sink that can be used by the protocol to stabilize the peg by sending the fees to long term or short term vaults depending on how the demand for the stablecoin looks like.
+
+## Stabilisation mechanism
+
+Repayment vaults are one of the most important features of the entire system.
+
+Directing fees to short-term repayment vaults will cause debt burn rate to increase leading to more minting or higher inflation.
+
+While directing fees to long term repayment vaults, debt burns happen slowly so fees keep removing stables out of circulation not inductive to higher inflation.
+
+The key is to algorithmically stabilise the token by directing the flow of capital towards longer term repayment vaults or shorter term ones.

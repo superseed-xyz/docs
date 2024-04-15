@@ -9,6 +9,9 @@
   "introduction": {
     "title": "Introduction"
   },
+  "lending-protocol": {
+    "title": "Lending Protocol"
+  },
   "-- Users": {
     "type": "separator",
     "title": "Users"
