@@ -1,0 +1,14 @@
+{
+  "overview": {
+    "title": "Overview"
+  },
+  "supercollateral": {
+    "title": "Supercollateral"
+  },
+  "proof-of-repayment": {
+    "title": "Proof of Repayment"
+  },
+  "repayment-vaults": {
+    "title": "Repayment vaults"
+  }
+}
