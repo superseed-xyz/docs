@@ -1,13 +1,38 @@
-# Transaction Fees
+import { Callout, Steps } from "nextra/components";
 
-## Superseed Fee Structure
+# Transaction Fees on Superseed
 
-Superseed transactions incur two primary costs: the L2 execution fee and the L1 security fee, each crucial for transaction execution and security across the network.
+Superseed is designed to be EVM equivalent, reusing Ethereum code and mimicking its behavior. 
+However, transaction fees on Superseed will have small differences Ethereum for several reasons. 
+This guide details how transaction fees work on Superseed, helping you account for them in your applications.
 
-### L2 Execution Fee
+## L2 Execution Fee
 
-The L2 fee, associated with processing transactions on Superseed Layer 2, adjusts dynamically based on transaction volume, increasing during high demand and decreasing otherwise.
+This fee is identical to the one on Ethereum. 
+It’s calculated as the gas used by the transaction multiplied by the gas price. 
+Superseed employs the [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) mechanism to set the base fee and an optional priority fee.
 
-### L1 Security Fee
+### Base Fee
 
-The L1 fee, tied to anchoring transactions to the foundational Ethereum layer, typically exceeds the L2 fee and fluctuates with Ethereum network gas prices. Strategic transaction timing, such as initiating during off-peak hours, can optimize cost-efficiency.
+The base fee is the minimum price per gas unit that must be paid for a transaction to be included in a block. 
+Transactions must specify a maximum base fee higher than the block base fee to be included. 
+The actual fee charged is the block base fee, even if the transaction specifies a higher maximum base fee.
+
+### Priority Fee
+
+Transactions can optionally specify a priority fee, an additional price per gas unit paid on top of the base fee. 
+The Superseed sequencer prioritizes transactions with higher priority fees, executing them faster.
+
+## L1 Data Fee
+
+This fee covers the cost of publishing transaction data to Ethereum, ensuring its availability for node download and execution. 
+This fee is mainly determined by Ethereum's base fee and, post-Ecotone upgrade, the Ethereum blob data gas price.
+
+The L1 Data Fee is automatically charged and deducted from the sender’s address. 
+It’s influenced by the estimated transaction size, the current Ethereum gas price, and several parameters.
+
+---
+
+<Callout type="info" emoji="ℹ️">
+  For further information on transaction fees and mechanisms, consult [OP Stack's official documentation](https://docs.optimism.io/stack/transactions/fees).  🚀
+</Callout>
