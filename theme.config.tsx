@@ -129,7 +129,7 @@ const logo = (
 const config: DocsThemeConfig = {
   logo,
   project: {
-    link: "https://github.com/arkantum-labs",
+    link: "https://github.com/superseed-xyz",
   },
   chat: {
     link: "https://discord.gg/vjDDB5S4BN",
@@ -141,7 +141,7 @@ const config: DocsThemeConfig = {
     content: "Submit an issue on Github →",
     labels: "feedback",
   },
-  docsRepositoryBase: "https://github.com/arkantum-labs/docs/tree/main",
+  docsRepositoryBase: "https://github.com/superseed-xyz/docs/tree/main",
   useNextSeoProps: () => ({ titleTemplate: "%s - Superseed Docs" }),
   head: (
     <>
