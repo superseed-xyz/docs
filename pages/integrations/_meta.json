@@ -11,14 +11,8 @@
   "data-providers": {
     "title": "Data Providers"
   },
-  "interchain": {
-    "title": "Interchain Communication"
-  },
   "oracles": {
     "title": "Oracles"
-  },
-  "onramps": {
-    "title": "Onramps"
   },
   "bridges": {
     "title": "Bridges"
