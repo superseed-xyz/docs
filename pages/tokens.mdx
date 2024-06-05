@@ -1,8 +1,25 @@
 import { Callout } from "nextra/components";
+import { Cards, Card } from "nextra/components";
+import { PiArrowSquareInDuotone } from "react-icons/pi";
 
 # Superseed Token List
 
-<Callout emoji="🚧">**This page is under construction.**</Callout>
+## Testnet
 
-Superseed is using a custom token list to provide a better experience for our users.
-This token list will be available on GitHub.
+<Callout type="info" emoji="ℹ️" title="Guidelines">
+  To list your token on the Superseed testnet, use this form and ensure your
+  token follows the guidelines below:
+</Callout>
+
+- Token must be an ERC-20 token
+- Token must be deployed on the Ethereum Sepolia testnet
+- Token must have a verified contract on Sepolia Etherscan
+- Request must be created by a representative of the project or include a verifying tweet from the project Twitter account.
+
+<Cards>
+  <Card
+    icon={<PiArrowSquareInDuotone size={32} />}
+    title="Token Request Form"
+    href="https://superseedxyz.typeform.com/to/c2J8j8m7"
+  />
+</Cards>
