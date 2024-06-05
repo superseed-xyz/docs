@@ -36,6 +36,11 @@
     "type": "separator",
     "title": "External"
   },
+  "brand-kit_link": {
+    "title": "Brand Kit ↗",
+    "href": "https://github.com/superseed-xyz/brand-kit",
+    "newWindow": true
+  },
   "status": {
     "title": "System Status"
   },
