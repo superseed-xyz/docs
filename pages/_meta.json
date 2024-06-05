@@ -32,6 +32,9 @@
   "tokens": {
     "title": "Tokens"
   },
+  "security": {
+    "title": "Security"
+  },
   "-- External": {
     "type": "separator",
     "title": "External"
