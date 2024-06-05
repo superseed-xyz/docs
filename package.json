@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arkantum-labs/docs.git"
+    "url": "git+https://github.com/superseed-xyz/docs.git"
   },
   "author": "0xNikolas <nick@superseed.xyz>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/arkantum-labs/docs/issues"
+    "url": "https://github.com/superseed-xyz/docs/issues"
   },
   "homepage": "https://docs.superseed.xyz",
   "dependencies": {
