@@ -2,11 +2,6 @@ import { Callout } from "nextra/components";
 
 # web3.js
 
-<Callout emoji="🚧">
-  **The RPC URLs are not available at this moment.** They will become available
-  after the launch of the Testnet and Mainnet respectively.
-</Callout>
-
 The [web3.js](https://web3js.org/) library is a JavaScript library designed to facilitate the interaction with nodes on EVM-compatible blockchains such as Superseed.
 
 Use web3.js for efficient communication with smart contracts on the Superseed network.
@@ -27,17 +22,14 @@ Begin by importing web3.js at the top of your JavaScript file to get started:
 const Web3 = require("web3");
 ```
 
-## Connecting to Superseed
+## Connecting to Superseed Sepolia Testnet
 
-Create a link to the Superseed network by instantiating a web3.js object, targeting the RPC endpoint of an Superseed node:
+Create a link to the Superseed Sepolia network by instantiating a web3.js object, targeting the RPC endpoint of an Superseed node:
 
 ```jsx
 const Web3 = require("web3");
 
-// Connect to Superseed Mainnet
-const web3 = new Web3("https://mainnet.superseed.xyz");
-
-// Or for Sepolia Testnet
+// For Superseed Sepolia Testnet
 const web3 = new Web3("https://sepolia.superseed.xyz");
 
 ```
