@@ -2,11 +2,6 @@ import { Callout } from "nextra/components";
 
 # ethers.js
 
-<Callout emoji="🚧">
-  **The RPC URLs are not available at this moment.** They will become available
-  after the launch of the Testnet and Mainnet respectively.
-</Callout>
-
 [ethers.js](https://docs.ethers.org/v6/) is a JavaScript library for developers working with EVM-compatible blockchains, offering an easy way to interact with the Superseed blockchain.
 
 This library facilitates the interaction with smart contracts deployed on Superseed.
@@ -25,22 +20,13 @@ To make ethers.js available in your project, preface your code with the followin
 const ethers = require("ethers");
 ```
 
-### Connecting to Superseed
+### Connecting to Superseed Sepolia Testnet
 
-For connections to the Superseed network, initialize an ethers.js `JsonRpcProvider` object with the Superseed RPC URL:
+For connections to the Superseed Sepolia network, initialize an ethers.js `JsonRpcProvider` object with the Superseed Sepolia RPC URL:
 
 ```jsx
 const ethers = require("ethers");
 
-const url = "https://mainnet.superseed.xyz";
+const url = "https://sepolia.superseed.xyz";
 const provider = new ethers.providers.JsonRpcProvider(url);
 ```
-
-<Callout type="info" emoji="ℹ️">
-To interact with the Superseed Sepolia Testnet, just change the `url` value to the corresponding testnet RPC endpoint:
-
-```jsx
-const url = "https://sepolia.superseed.xyz";
-// The rest of the code remains unchanged
-```
-</Callout>
