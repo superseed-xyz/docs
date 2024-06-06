@@ -1,0 +1,14 @@
+{
+  "network-information": {
+    "title": "Network Information"
+  },
+  "contract-addresses": {
+    "title": "Contract Addresses"
+  },
+  "transaction-fees": {
+    "title": "Transaction Fees"
+  },
+  "differences-compared-to-ethereum": {
+    "title": "Differences compared to Ethereum"
+  }
+}
