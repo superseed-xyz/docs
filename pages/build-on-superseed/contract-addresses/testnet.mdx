@@ -1,128 +1,33 @@
 import { Callout } from "nextra/components";
 
-# Sepolia Testnet Contracts
-
-## L2 Contracts
-
-### Superseed Mainnet
-
-| Name                          | Address                                                                                                                         |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| WETH9                         | [0x4200000000000000000000000000000000000006](https://explorer.superseed.xyz/address/0x4200000000000000000000000000000000000006) |
-| L2CrossDomainMessenger        | [0x4200000000000000000000000000000000000007](https://explorer.superseed.xyz/address/0x4200000000000000000000000000000000000007) |
-| L2StandardBridge              | [0x4200000000000000000000000000000000000010](https://explorer.superseed.xyz/address/0x4200000000000000000000000000000000000010) |
-| SequencerFeeVault             | [0x4200000000000000000000000000000000000011](https://explorer.superseed.xyz/address/0x4200000000000000000000000000000000000011) |
-| OptimismMintableERC20Factory  | [0x4200000000000000000000000000000000000012](https://explorer.superseed.xyz/address/0x4200000000000000000000000000000000000012) |
-| GasPriceOracle                | [0x420000000000000000000000000000000000000F](https://explorer.superseed.xyz/address/0x420000000000000000000000000000000000000F) |
-| L1Block                       | [0x4200000000000000000000000000000000000015](https://explorer.superseed.xyz/address/0x4200000000000000000000000000000000000015) |
-| L2ToL1MessagePasser           | [0x4200000000000000000000000000000000000016](https://explorer.superseed.xyz/address/0x4200000000000000000000000000000000000016) |
-| L2ERC721Bridge                | [0x4200000000000000000000000000000000000014](https://explorer.superseed.xyz/address/0x4200000000000000000000000000000000000014) |
-| OptimismMintableERC721Factory | [0x4200000000000000000000000000000000000017](https://explorer.superseed.xyz/address/0x4200000000000000000000000000000000000017) |
-| ProxyAdmin                    | [0x4200000000000000000000000000000000000018](https://explorer.superseed.xyz/address/0x4200000000000000000000000000000000000018) |
-| SuperseedFeeVault             | [0x4200000000000000000000000000000000000019](https://explorer.superseed.xyz/address/0x4200000000000000000000000000000000000019) |
-| L1FeeVault                    | [0x420000000000000000000000000000000000001a](https://explorer.superseed.xyz/address/0x420000000000000000000000000000000000001a) |
-| EAS                           | [0x4200000000000000000000000000000000000021](https://explorer.superseed.xyz/address/0x4200000000000000000000000000000000000021) |
-| EASSchemaRegistry             | [0x4200000000000000000000000000000000000020](https://explorer.superseed.xyz/address/0x4200000000000000000000000000000000000020) |
-
-### Superseed Testnet
-
-| Name                          | Address                                                                                                                                 |
-| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| WETH9                         | [0x4200000000000000000000000000000000000006](https://sepolia-explorer.superseed.xyz/address/0x4200000000000000000000000000000000000006) |
-| L2CrossDomainMessenger        | [0x4200000000000000000000000000000000000007](https://sepolia-explorer.superseed.xyz/address/0x4200000000000000000000000000000000000007) |
-| L2StandardBridge              | [0x4200000000000000000000000000000000000010](https://sepolia-explorer.superseed.xyz/address/0x4200000000000000000000000000000000000010) |
-| SequencerFeeVault             | [0x4200000000000000000000000000000000000011](https://sepolia-explorer.superseed.xyz/address/0x4200000000000000000000000000000000000011) |
-| OptimismMintableERC20Factory  | [0x4200000000000000000000000000000000000012](https://sepolia-explorer.superseed.xyz/address/0x4200000000000000000000000000000000000012) |
-| GasPriceOracle                | [0x420000000000000000000000000000000000000F](https://sepolia-explorer.superseed.xyz/address/0x420000000000000000000000000000000000000F) |
-| L1Block                       | [0x4200000000000000000000000000000000000015](https://sepolia-explorer.superseed.xyz/address/0x4200000000000000000000000000000000000015) |
-| L2ToL1MessagePasser           | [0x4200000000000000000000000000000000000016](https://sepolia-explorer.superseed.xyz/address/0x4200000000000000000000000000000000000016) |
-| L2ERC721Bridge                | [0x4200000000000000000000000000000000000014](https://sepolia-explorer.superseed.xyz/address/0x4200000000000000000000000000000000000014) |
-| OptimismMintableERC721Factory | [0x4200000000000000000000000000000000000017](https://sepolia-explorer.superseed.xyz/address/0x4200000000000000000000000000000000000017) |
-| ProxyAdmin                    | [0x4200000000000000000000000000000000000018](https://sepolia-explorer.superseed.xyz/address/0x4200000000000000000000000000000000000018) |
-| SuperseedFeeVault             | [0x4200000000000000000000000000000000000019](https://sepolia-explorer.superseed.xyz/address/0x4200000000000000000000000000000000000019) |
-| L1FeeVault                    | [0x420000000000000000000000000000000000001a](https://sepolia-explorer.superseed.xyz/address/0x420000000000000000000000000000000000001a) |
-| EAS                           | [0x4200000000000000000000000000000000000021](https://sepolia-explorer.superseed.xyz/address/0x4200000000000000000000000000000000000021) |
-| EASSchemaRegistry             | [0x4200000000000000000000000000000000000020](https://sepolia-explorer.superseed.xyz/address/0x4200000000000000000000000000000000000020) |
-
-<Callout emoji="ℹ️">
-  *L2 contract addresses are the same for Mainnet and Sepolia.*
-</Callout>
+# Sepolia Testnet
 
 ## L1 Contracts
 
-### Ethereum Mainnet
+| Name                              | Address                                                                                                                       |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| SystemConfigProxy                 | [0x4DF2f170214198df84716b89C84B0c177c39F6c9](https://sepolia.etherscan.io/address/0x4DF2f170214198df84716b89C84B0c177c39F6c9) |
+| L2OutputOracleProxy               | [0x4F63AcEF04c2469977F31Bc12b5Df1589c3046E2](https://sepolia.etherscan.io/address/0x4F63AcEF04c2469977F31Bc12b5Df1589c3046E2) |
+| OptimismPortalProxy               | [0x7A0db8C51432d2C3eb4e8f360a2EeB26FF2809fB](https://sepolia.etherscan.io/address/0x7A0db8C51432d2C3eb4e8f360a2EeB26FF2809fB) |
+| OptimismMintableERC20FactoryProxy | [0xe75C5a7FB6cae3CA6A5ED030aBfA0012D1F52D58](https://sepolia.etherscan.io/address/0xe75C5a7FB6cae3CA6A5ED030aBfA0012D1F52D58) |
+| L1StandardBridgeProxy             | [0x2B227A603fAAdB3De0ED050b63ADD232B5f2c28C](https://sepolia.etherscan.io/address/0x2B227A603fAAdB3De0ED050b63ADD232B5f2c28C) |
+| L1CrossDomainMessengerProxy       | [0x56BC9827610EF2DA23AE7D3eea1e1cc16A136Ec4](https://sepolia.etherscan.io/address/0x56BC9827610EF2DA23AE7D3eea1e1cc16A136Ec4) |
+| L1ERC721BridgeProxy               | [0xEe9f976230274e559eb4B899994B7D085A211935](https://sepolia.etherscan.io/address/0xEe9f976230274e559eb4B899994B7D085A211935) |
+| ProxyAdmin                        | [0x2AAA1115FAABbdd343016F3bc10b06D3302BFe30](https://sepolia.etherscan.io/address/0x2AAA1115FAABbdd343016F3bc10b06D3302BFe30) |
+| AddressManager                    | [0xfD1d00126Af6a0dee3d4795203A635198de0b9e4](https://sepolia.etherscan.io/address/0xfD1d00126Af6a0dee3d4795203A635198de0b9e4) |
 
-| Name                         | Address               |
-| ---------------------------- | --------------------- |
-| AddressManager               | 🚧 Under construction |
-| L1CrossDomainMessenger       | 🚧 Under construction |
-| L1ERC721Bridge               | 🚧 Under construction |
-| L1StandardBridge             | 🚧 Under construction |
-| L2OutputOracle               | 🚧 Under construction |
-| OptimismMintableERC20Factory | 🚧 Under construction |
-| OptimismPortal               | 🚧 Under construction |
-| ProxyAdmin                   | 🚧 Under construction |
-| SystemConfig                 | 🚧 Under construction |
-| SystemDictator               | 🚧 Under construction |
+## L2 Contracts
 
-**Unused contracts**
-
-Some contracts that are included in the [OP Stack SDK](https://stack.optimism.io/docs/build/sdk/#unneeded-contract-addresses) are not used on Superseed.
-
-- `StateCommitmentChain`
-- `CanonicalTransactionChain`
-- `BondManager`
-
----
-
-### Ethereum Sepolia Testnet
-
-| Name                         | Address               |
-| ---------------------------- | --------------------- |
-| AddressManager               | 🚧 Under construction |
-| L1CrossDomainMessenger       | 🚧 Under construction |
-| L1ERC721Bridge               | 🚧 Under construction |
-| L1StandardBridge             | 🚧 Under construction |
-| L2OutputOracle               | 🚧 Under construction |
-| OptimismMintableERC20Factory | 🚧 Under construction |
-| OptimismPortal               | 🚧 Under construction |
-| ProxyAdmin                   | 🚧 Under construction |
-| SystemConfig                 | 🚧 Under construction |
-
----
-
-## Admins
-
-### Superseed Mainnet
-
-| Admin Role            | Address               | Type of Key           |
-| --------------------- | --------------------- | --------------------- |
-| Batch Sender          | 🚧 Under construction | 🚧 Under construction |
-| Batch Inbox           | 🚧 Under construction | 🚧 Under construction |
-| Output Proposer       | 🚧 Under construction | 🚧 Under construction |
-| L1 Proxy Admin Owner  | 🚧 Under construction | 🚧 Under construction |
-| L1 Nested Safe Signer | 🚧 Under construction | 🚧 Under construction |
-| L2 Proxy Admin Owner  | 🚧 Under construction | 🚧 Under construction |
-| L2 Nested Safe Signer | 🚧 Under construction | 🚧 Under construction |
-| Challenger            | 🚧 Under construction | 🚧 Under construction |
-| System config owner   | 🚧 Under construction | 🚧 Under construction |
-| Guardian              | 🚧 Under construction | 🚧 Under construction |
-
----
-
-### Superseed Sepolia Testnet
-
-| Admin Role            | Address               | Type of Key           |
-| --------------------- | --------------------- | --------------------- |
-| Batch Sender          | 🚧 Under construction | 🚧 Under construction |
-| Batch Inbox           | 🚧 Under construction | 🚧 Under construction |
-| Output Proposer       | 🚧 Under construction | 🚧 Under construction |
-| L1 Proxy Admin Owner  | 🚧 Under construction | 🚧 Under construction |
-| L1 Nested Safe Signer | 🚧 Under construction | 🚧 Under construction |
-| L2 Proxy Admin Owner  | 🚧 Under construction | 🚧 Under construction |
-| L2 Nested Safe Signer | 🚧 Under construction | 🚧 Under construction |
-| Challenger            | 🚧 Under construction | 🚧 Under construction |
-| System config owner   | 🚧 Under construction | 🚧 Under construction |
-| Guardian              | 🚧 Under construction | 🚧 Under construction |
+| Name                   | Value                                                                                                                                   |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| BaseFeeVault           | [0x4200000000000000000000000000000000000019](https://sepolia-explorer.superseed.xyz/address/0x4200000000000000000000000000000000000019) |
+| GasPriceOracle         | [0x420000000000000000000000000000000000000F](https://sepolia-explorer.superseed.xyz/address/0x420000000000000000000000000000000000000F) |
+| L1Block                | [0x4200000000000000000000000000000000000015](https://sepolia-explorer.superseed.xyz/address/0x4200000000000000000000000000000000000015) |
+| L1FeeVault             | [0x420000000000000000000000000000000000001A](https://sepolia-explorer.superseed.xyz/address/0x420000000000000000000000000000000000001A) |
+| L2CrossDomainMessenger | [0x4200000000000000000000000000000000000007](https://sepolia-explorer.superseed.xyz/address/0x4200000000000000000000000000000000000007) |
+| L2ERC721Bridge         | [0x4200000000000000000000000000000000000014](https://sepolia-explorer.superseed.xyz/address/0x4200000000000000000000000000000000000014) |
+| L2StandardBridge       | [0x4200000000000000000000000000000000000010](https://sepolia-explorer.superseed.xyz/address/0x4200000000000000000000000000000000000010) |
+| L2ToL1MessagePasser    | [0x4200000000000000000000000000000000000016](https://sepolia-explorer.superseed.xyz/address/0x4200000000000000000000000000000000000016) |
+| SequencerFeeVault      | [0x4200000000000000000000000000000000000011](https://sepolia-explorer.superseed.xyz/address/0x4200000000000000000000000000000000000011) |
 
 ---
