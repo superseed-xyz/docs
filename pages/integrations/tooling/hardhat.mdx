@@ -2,11 +2,6 @@ import { Callout } from "nextra/components";
 
 # Using Hardhat for Superseed Development
 
-<Callout emoji="🚧">
-  **The RPC URLs are not available at this moment.** They will become available
-  after the launch of the Testnet and Mainnet respectively.
-</Callout>
-
 Hardhat is recognised for being flexible, extensible and fast in the Ethereum smart contract development.
 
 ## Configuring Hardhat for Superseed
@@ -18,16 +13,10 @@ import { HardhatUserConfig } from "hardhat/config";
 import "@nomiclabs/hardhat-ethers";
 
 const config: HardhatUserConfig = {
-  networks: {
-    // For Superseed Mainnet
-    "superseed-mainnet": {
-      url: "https://mainnet.superseed.org",
-      accounts: [process.env.WALLET_KEY as string],
-      gasPrice: 1000000000,
-    },
+  networks: {   
     // For Superseed Sepolia Testnet
     "superseed-sepolia": {
-      url: "https://sepolia.superseed.org",
+      url: "https://sepolia.superseed.xyz",
       accounts: [process.env.PRIVATE_KEY as string],
       gasPrice: 1000000000,
     },
@@ -44,14 +33,14 @@ const config: HardhatUserConfig = {
 export default config;
 ```
 
-## Your Smart Contracts on Superseed Mainnet
+## Your Smart Contracts on Superseed Testnet
 
 ### Deployment
 
 Use Hardhat's deployment scripts, specifying the network:
 
 ```bash
-npx hardhat run scripts/deploy.ts --network superseed-mainnet
+npx hardhat run scripts/deploy.ts --network superseed-sepolia
 ```
 
 ### Verification
@@ -59,18 +48,13 @@ npx hardhat run scripts/deploy.ts --network superseed-mainnet
 After deploying, verify your smart contract using Hardhat's built-in verification tool:
 
 ```bash
-npx hardhat verify --network superseed-mainnet DEPLOYED_CONTRACT_ADDRESS "Constructor argument 1"
+npx hardhat verify --network superseed-sepolia DEPLOYED_CONTRACT_ADDRESS "Constructor argument 1"
 ```
 
 <Callout emoji="💬">
   Remember to replace `DEPLOYED_CONTRACT_ADDRESS` and `"Constructor argument 1"`
   with the actual address of your deployed contract and any necessary
   constructor parameters.
-</Callout>
-
-<Callout type="info" emoji="ℹ️">
-  For deploying on the Superseed Testnet, just replace the `—-network` parameter
-  with your desired network.
 </Callout>
 
 <Callout type="info" emoji="ℹ️">
