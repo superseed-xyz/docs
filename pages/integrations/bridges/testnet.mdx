@@ -1,0 +1,56 @@
+import { Callout, Steps } from "nextra/components";
+
+export function FAQBox({ title, children }) {
+  return (
+    <details
+      open
+      className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+    >
+      <summary>
+        <strong className="text-lg">{title}</strong>
+      </summary>
+      <div className="nx-p-2">{children}</div>
+    </details>
+  )
+}
+
+# Superseed Bridge
+
+The [Superseed Bridge](https://sepolia-bridge.superseed.xyz/) facilitates the transfer of ETH and selected ERC-20 tokens between the Ethereum network and Superseed.
+
+## To use the bridge for transactions:
+
+<Steps>
+
+### Navigate to [Superseed Bridge]( https://sepolia-bridge.superseed.xyz/)
+
+### Click _Connect wallet_
+
+### Follow the prompts to connect your wallet
+
+### Specify the amount and the asset you wish to transfer
+
+### Click _Deposit_
+
+### Confirm dialog box and click _Initiate deposit_
+
+### Follow the prompts in your wallet to confirm the transaction
+
+</Steps>
+
+<Callout type="info" emoji="ℹ️" title="Tokens">
+  If you want to learn more about supported tokens or wish to add your token to this list, go to the [Tokens](/tokens) page.
+</Callout>
+
+
+## FAQ
+
+<FAQBox title="Can I transfer tokens through the Superbridge UI?">
+  Yes
+</FAQBox>
+
+<FAQBox title="Is the Superbridge a liquidity bridge?">
+  No, the Superbridge is a UI for the native OP Stack bridge. 
+</FAQBox>
+
+---

@@ -1,0 +1,32 @@
+import { Callout } from "nextra/components";
+
+# ethers.js
+
+[ethers.js](https://docs.ethers.org/v6/) is a JavaScript library for developers working with EVM-compatible blockchains, offering an easy way to interact with the Superseed blockchain.
+
+This library facilitates the interaction with smart contracts deployed on Superseed.
+
+### Installation
+
+```bash
+npm install --save ethers
+```
+
+### Setup
+
+To make ethers.js available in your project, preface your code with the following import statement:
+
+```jsx
+const ethers = require("ethers");
+```
+
+### Connecting to Superseed Sepolia Testnet
+
+For connections to the Superseed Sepolia network, initialize an ethers.js `JsonRpcProvider` object with the Superseed Sepolia RPC URL:
+
+```jsx
+const ethers = require("ethers");
+
+const url = "https://sepolia.superseed.xyz";
+const provider = new ethers.providers.JsonRpcProvider(url);
+```

@@ -1,0 +1,19 @@
+# Overview
+
+On top of our Layer 2 optimistic rollup we are building a CDP (collateralized debt position) lending protocol, which is the core application of Superseed.
+
+CDP lending protocols allow users to lock an asset as collateral and mint or borrow a different asset, most commonly a stablecoin. Unlike P2P (Peer-to-Peer) Money Markets, where the liquidity for borrowers is sourced from a pool of lenders, in CDP lending protocols, the liquidity is derived directly from the collateral provided by the borrowers.
+
+On Superseed, users will be able to use different types of assets as collateral in our lending protocol in order to mint and borrow the Superseed stablecoin.
+
+It works the following way: when collateral gets locked into the Superseed Lending Protocol, a collateralized debt position (CDP) is created and Superseed stablecoin is generated. The protocol requires overcollateralization, meaning that the value of the collateral backing the debt must exceed 150% of the stablecoins' value.
+
+If the user wishes to withdraw their collateral back from the protocol, they have to first repay their loan. If the CDP fails to maintain the required collateralization ratio, part of the collateral is auctioned off by the protocol to cover the overdue debt, and a penalty fee is also applied.
+
+When a user is liquidated or repays their loan, the stablecoin is burned by the protocol.
+
+Interest rates within the Superseed lending protocol are determined by governance and have the role of providing stability to the stablecoin.
+
+The Superseed stablecoin is a decentralized, over-collateralized ERC-20 token designed to maintain a stable value as close as possible to $1.
+
+Collateral assets in the lending protocol include ETH, WBTC, and others.

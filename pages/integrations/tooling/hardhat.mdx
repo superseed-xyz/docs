@@ -1,0 +1,65 @@
+import { Callout } from "nextra/components";
+
+# Using Hardhat for Superseed Development
+
+Hardhat is recognised for being flexible, extensible and fast in the Ethereum smart contract development.
+
+## Configuring Hardhat for Superseed
+
+To prepare Hardhat for deployment on the Superseed networks, make the necessary adjustments to your `hardhat.config.ts`:
+
+```tsx
+import { HardhatUserConfig } from "hardhat/config";
+import "@nomiclabs/hardhat-ethers";
+
+const config: HardhatUserConfig = {
+  networks: {   
+    // For Superseed Sepolia Testnet
+    "superseed-sepolia": {
+      url: "https://sepolia.superseed.xyz",
+      accounts: [process.env.PRIVATE_KEY as string],
+      gasPrice: 1000000000,
+    },
+    // For local development environment
+    "superseed-local": {
+      url: "http://localhost:8545",
+      accounts: [process.env.PRIVATE_KEY as string],
+      gasPrice: 1000000000,
+    },
+  },
+  defaultNetwork: "superseed-local",
+};
+
+export default config;
+```
+
+## Your Smart Contracts on Superseed Testnet
+
+### Deployment
+
+Use Hardhat's deployment scripts, specifying the network:
+
+```bash
+npx hardhat run scripts/deploy.ts --network superseed-sepolia
+```
+
+### Verification
+
+After deploying, verify your smart contract using Hardhat's built-in verification tool:
+
+```bash
+npx hardhat verify --network superseed-sepolia DEPLOYED_CONTRACT_ADDRESS "Constructor argument 1"
+```
+
+<Callout emoji="💬">
+  Remember to replace `DEPLOYED_CONTRACT_ADDRESS` and `"Constructor argument 1"`
+  with the actual address of your deployed contract and any necessary
+  constructor parameters.
+</Callout>
+
+<Callout type="info" emoji="ℹ️">
+  The provided configurations and commands are aimed at offering a simple
+  start-up process for developers working with Hardhat on the Superseed
+  blockchain. Adjustments may be needed based on specific contract requirements
+  or network preferences.
+</Callout>

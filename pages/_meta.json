@@ -1,0 +1,59 @@
+{
+  "-- Getting Started": {
+    "type": "separator",
+    "title": "Getting Started"
+  },
+  "index":{
+    "title": "Welcome"
+  },
+  "introduction": {
+    "title": "Introduction"
+  },
+  "lending-protocol": {
+    "title": "Lending Protocol"
+  },
+  "-- Users": {
+    "type": "separator",
+    "title": "Users"
+  },
+  "using-superseed": {
+    "title": "Using Superseed"
+  },
+  "-- Builders": {
+    "type": "separator",
+    "title": "Builders"
+  },
+  "build-on-superseed": {
+    "title": "Build on Superseed"
+  },
+  "integrations": {
+    "title": "Integrations"
+  },
+  "tokens": {
+    "title": "Tokens"
+  },
+  "security": {
+    "title": "Security"
+  },
+  "-- External": {
+    "type": "separator",
+    "title": "External"
+  },
+  "brand-kit_link": {
+    "title": "Brand Kit ↗",
+    "href": "https://github.com/superseed-xyz/brand-kit",
+    "newWindow": true
+  },
+  "op-stack": {
+    "title": "Built on the OP Stack ↗",
+    "type": "page",
+    "href": "https://stack.optimism.io/",
+    "newWindow": true
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "mailto:gm@superseed.xyz",
+    "newWindow": true
+  }
+}
