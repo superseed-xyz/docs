@@ -4,5 +4,8 @@
     },
     "hardhat": {
         "title": "Hardhat"
+    },
+    "thirdweb": {
+        "title": "Thirdweb"
     }
 }
