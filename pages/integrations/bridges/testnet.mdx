@@ -6,12 +6,12 @@ export function FAQBox({ title, children }) {
       open
       className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
     >
-      <summary className="nx-flex nx-items-center nx-cursor-pointer nx-list-none nx-p-1 nx-transition-colors hover:nx-bg-gray-100 dark:hover:nx-bg-neutral-800 before:nx-mr-1 before:nx-inline-block before:nx-transition-transform before:nx-content-[''] dark:before:nx-invert before:nx-shrink-0 rtl:before:nx-rotate-180 [[data-expanded]>&]:before:nx-rotate-90">
+      <summary>
         <strong className="text-lg">{title}</strong>
       </summary>
       <div className="nx-p-2">{children}</div>
     </details>
-  );
+  )
 }
 
 # Superseed Bridge
@@ -22,7 +22,7 @@ The [Superseed Bridge](https://sepolia-bridge.superseed.xyz/) facilitates the tr
 
 <Steps>
 
-### Navigate to [Superseed Bridge](https://sepolia-bridge.superseed.xyz/)
+### Navigate to [Superseed Bridge]( https://sepolia-bridge.superseed.xyz/)
 
 ### Click _Connect wallet_
 
@@ -39,16 +39,37 @@ The [Superseed Bridge](https://sepolia-bridge.superseed.xyz/) facilitates the tr
 </Steps>
 
 <Callout type="info" emoji="ℹ️" title="Tokens">
-  If you want to learn more about supported tokens or wish to add your token to
-  this list, go to the [Tokens](/tokens) page.
+  If you want to learn more about supported tokens or wish to add your token to this list, go to the [Tokens](/tokens) page.
 </Callout>
+
 
 ## FAQ
 
-<FAQBox title="Can I transfer tokens through the Superbridge UI?">Yes</FAQBox>
+<FAQBox title="What is the purpose of the bridge?">
+  Blockchain bridges are platforms that facilitate the transfer of assets and data from one blockchain ecosystem to another. 
+</FAQBox>
 
-<FAQBox title="Is the Superbridge a liquidity bridge?">
-  No, the Superbridge is a UI for the native OP Stack bridge.
+<FAQBox title="Are there any fees involved?">
+  When bridging over tokens from L1 to L2, you will have to sign one or two transactions with their corresponding fees:
+
+    1. If you are bridging a token for the first time, you'll sign one **approval transaction**.
+    2. In all cases, you'll sign a **deposit transaction** that will send your tokens to the Bridge.
+</FAQBox>
+
+<FAQBox title="Does Superseed Bridge charge any extra fees?">
+  Superseed Bridge does not charge any extra fees. However, standard network fees still apply. These fees are not collected by Superseed Bridge. The specific transaction fee can vary depending on the transaction type and the current network congestion.
+</FAQBox>
+
+<FAQBox title="Is Superseed Bridge a liquidity bridge?">
+  No, the Superseed Bridge is a UI for the native OP Stack bridge. 
+</FAQBox>
+
+<FAQBox title="Can I transfer tokens through the Superseed Bridge UI?">
+  Yes, if you want to learn more about supported tokens, go to the [Tokens](/tokens) page.
+</FAQBox>
+
+<FAQBox title="What if I have a question, issue or problem?">
+  The Superseed [Discord](https://discord.gg/vjDDB5S4BN) is open for assistance and support! You can create a support ticket in the #tickets channel.
 </FAQBox>
 
 ---
