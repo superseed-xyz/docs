@@ -1,12 +1,13 @@
 import { Analytics } from "@vercel/analytics/react";
 import '../styles/globals.css'
 import 'nextra-theme-docs/style.css'
+import { ThemeProvider } from 'next-themes';
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
+    <ThemeProvider attribute="class">
       <Component {...pageProps} />
       <Analytics />
-    </>
+    </ThemeProvider>
   );
 }
