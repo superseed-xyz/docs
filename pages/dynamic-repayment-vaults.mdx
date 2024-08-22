@@ -1,0 +1,5 @@
+# Dynamic Repayment Vaults
+
+One of the core stabilization modules in the Superseed Lending Protocol is the Dynamic Repayment Vault. Borrowers who choose to manually repay their loans can do so directly, burning the stablecoin they initially minted as a loan. However, for Supercollateral users benefiting from self-repaying loans, the fees used for repayment are directed into a smart contract known as a repayment vault. This vault then systematically burns the debt of Supercollateral users on a pro-rata basis according to a predefined schedule. There will be one repayment vault, which dynamically alters the repayment rate.
+
+The benefits of the Dynamic Repayment Vault include reducing the volatility of the repayment rate by following a programmatic schedule for burning the debt of Supercollateral users. Additionally, the Dynamic Repayment Vault acts as a stablecoin sink, which the protocol can utilize to stabilize the peg.
