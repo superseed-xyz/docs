@@ -1,23 +1,35 @@
 {
-  "-- Getting Started": {
+  "-- Start Here": {
     "type": "separator",
-    "title": "Getting Started"
+    "title": "Start Here"
   },
   "index":{
-    "title": "Welcome"
+    "title": "Getting Started"
   },
   "introduction": {
     "title": "Introduction"
   },
-  "lending-protocol": {
+  "about-superseed": {
+    "title": "About Superseed"
+  },
+  "-- Core Concepts": {
+    "type": "separator",
+    "title": "Core Concepts"
+  },
+  "what-is-superseed": {
+    "title": "What is Superseed?"
+  },
+  "proof-of-repayment": {
+    "title": "Proof-of-Repayment"
+  },
+  "supercollateral": {
+    "title": "Supercollateral"
+  },
+  "cdp-protocol": {
     "title": "Lending Protocol"
   },
-  "-- Users": {
-    "type": "separator",
-    "title": "Users"
-  },
-  "using-superseed": {
-    "title": "Using Superseed"
+  "dynamic-repayment-vaults": {
+    "title": "Repayment Vaults"
   },
   "-- Builders": {
     "type": "separator",
@@ -35,9 +47,19 @@
   "security": {
     "title": "Security"
   },
-  "-- External": {
+  "-- Using Superseed": {
     "type": "separator",
-    "title": "External"
+    "title": "Using Superseed"
+  },
+  "using-superseed": {
+    "title": "Guide for Wallets"
+  },
+  "-- Resources": {
+    "type": "separator",
+    "title": "Resources"
+  },
+  "faq": {
+    "title": "FAQ"
   },
   "brand-kit_link": {
     "title": "Brand Kit ↗",
