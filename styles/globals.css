@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+ul.nextra-menu-desktop > li.open > button {
+  font-weight: 600;
+  margin: 0.25rem 0 0.125rem 0;
+  filter: contrast(3);
+  transition: 250ms;
+}

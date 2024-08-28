@@ -3,68 +3,24 @@
     "type": "separator",
     "title": "Start Here"
   },
-  "index":{
+  "index": {
     "title": "Getting Started"
   },
-  "introduction": {
-    "title": "Introduction"
-  },
-  "about-superseed": {
-    "title": "About Superseed"
-  },
-  "-- Core Concepts": {
-    "type": "separator",
+  "core-concepts": {
     "title": "Core Concepts"
   },
-  "what-is-superseed": {
-    "title": "What is Superseed?"
-  },
-  "proof-of-repayment": {
-    "title": "Proof-of-Repayment"
-  },
-  "supercollateral": {
-    "title": "Supercollateral"
-  },
-  "cdp-protocol": {
-    "title": "Lending Protocol"
-  },
-  "dynamic-repayment-vaults": {
-    "title": "Repayment Vaults"
-  },
-  "-- Builders": {
-    "type": "separator",
+  "builders": {
     "title": "Builders"
   },
-  "build-on-superseed": {
-    "title": "Build on Superseed"
-  },
-  "integrations": {
-    "title": "Integrations"
-  },
-  "tokens": {
-    "title": "Tokens"
-  },
-  "security": {
-    "title": "Security"
-  },
-  "-- Using Superseed": {
-    "type": "separator",
+  "using-superseed": {
     "title": "Using Superseed"
   },
-  "using-superseed": {
-    "title": "Guide for Wallets"
-  },
-  "-- Resources": {
-    "type": "separator",
+  "resources": {
     "title": "Resources"
   },
-  "faq": {
-    "title": "FAQ"
-  },
-  "brand-kit_link": {
-    "title": "Brand Kit ↗",
-    "href": "https://github.com/superseed-xyz/brand-kit",
-    "newWindow": true
+  "introduction": {
+    "title": "Introduction",
+    "type": "page"
   },
   "op-stack": {
     "title": "Built on the OP Stack ↗",
