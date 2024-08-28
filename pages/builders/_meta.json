@@ -1,0 +1,14 @@
+{
+  "build-on-superseed": {
+    "title": "Build on Superseed"
+  },
+  "integrations": {
+    "title": "Integrations"
+  },
+  "tokens": {
+    "title": "Tokens"
+  },
+  "security": {
+    "title": "Security"
+  }
+}
