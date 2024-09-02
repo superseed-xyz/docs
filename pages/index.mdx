@@ -11,7 +11,9 @@ import {
   PiComputerTowerDuotone,
   PiCompassDuotone,
   PiHandCoinsDuotone,
+  Pi,
 } from "react-icons/pi";
+import { GoBook } from "react-icons/go";
 
 # Getting Started
 
@@ -20,14 +22,16 @@ import {
 Welcome to the Superseed Docs, your go-to resource for all technical details and insights about Superseed.
 
 Find guides, tools, endpoints, and resources to help you build your project on Superseed.
-<br/>
+
+<br />
 <Cards>
-    <Card
+  <Card
     title="Learn about Superseed"
+    icon={<GoBook size={32} />}
     href="/core-concepts/what-is-superseed"
   />
 </Cards>
-<br/>
+<br />
 
 # Quick Links
 
@@ -37,27 +41,27 @@ Find guides, tools, endpoints, and resources to help you build your project on S
   <Card
     icon={<PiCurrencyEthDuotone size={32} />}
     title=" Contract Addresses"
-    href="/build-on-superseed/contract-addresses"
+    href="/builders/build-on-superseed/contract-addresses"
   />
   <Card
     icon={<PiShareNetworkDuotone size={32} />}
     title=" Network Information"
-    href="/build-on-superseed/network-information"
+    href="/builders/build-on-superseed/network-information"
   />
   <Card
     icon={<PiComputerTowerDuotone size={32} />}
     title=" RPC Node Providers"
-    href="/integrations/rpc-node-providers"
+    href="/builders/integrations/rpc-node-providers"
   />
   <Card
     icon={<PiCompassDuotone size={32} />}
     title=" Block Explorers"
-    href="/integrations/block-explorers"
+    href="/builders/integrations/block-explorers"
   />
   <Card
     icon={<PiHandCoinsDuotone size={32} />}
     title=" Faucets"
-    href="/integrations/faucets"
+    href="/builders/integrations/faucets"
   />
 </Cards>
 
@@ -67,7 +71,7 @@ Find guides, tools, endpoints, and resources to help you build your project on S
   <Card
     icon={<PiUserCircleGearDuotone size={32} />}
     title=" Using Superseed"
-    href="/using-superseed"
+    href="/using-superseed/using-superseed"
   />
 </Cards>
 
@@ -82,16 +86,16 @@ Find guides, tools, endpoints, and resources to help you build your project on S
   <Card
     icon={<PiCircuitryDuotone size={32} />}
     title=" About Superseed"
-    href="/introduction/about-superseed"
+    href="/core-concepts/what-is-superseed"
   />
   <Card
     icon={<PiGraphDuotone size={32} />}
-    title=" Decentralization"
-    href="/introduction/decentralization"
+    title="Supercollateral"
+    href="/core-concepts/supercollateral"
   />
   <Card
     icon={<PiListMagnifyingGlassDuotone size={32} />}
     title=" Lending Protocol"
-    href="/lending-protocol/overview"
+    href="/core-concepts/cdp-protocol"
   />
 </Cards>
