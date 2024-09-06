@@ -27,18 +27,14 @@
     "title": "Users"
   },
   "using-superseed": {
-    "title": "Using Superseed"
-  },
-  "-- External": {
-    "type": "separator",
-    "title": "External"
-  },
-  "security": {
-    "title": "Security"
+    "title": "Add to Wallet"
   },
   "-- Resources": {
     "type": "separator",
     "title": "Resources"
+  },
+  "security": {
+    "title": "Security"
   },
   "faq": {
     "title": "FAQ"
