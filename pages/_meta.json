@@ -9,14 +9,44 @@
   "core-concepts": {
     "title": "Core Concepts"
   },
-  "builders": {
+  "-- Builders": {
+    "type": "separator",
     "title": "Builders"
+  },
+  "build-on-superseed": {
+    "title": "Build on Superseed"
+  },
+  "integrations": {
+    "title": "Integrations"
+  },
+  "tokens": {
+    "title": "Tokens"
+  },
+  "-- Users": {
+    "type": "separator",
+    "title": "Users"
   },
   "using-superseed": {
     "title": "Using Superseed"
   },
-  "resources": {
+  "-- External": {
+    "type": "separator",
+    "title": "External"
+  },
+  "security": {
+    "title": "Security"
+  },
+  "-- Resources": {
+    "type": "separator",
     "title": "Resources"
+  },
+  "faq": {
+    "title": "FAQ"
+  },
+  "brand-kit_link": {
+    "title": "Brand Kit ↗",
+    "href": "https://github.com/superseed-xyz/brand-kit",
+    "newWindow": true
   },
   "introduction": {
     "title": "Introduction",
