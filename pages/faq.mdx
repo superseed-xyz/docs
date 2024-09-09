@@ -1,39 +1,47 @@
 # FAQ
 
-What is Superseed? 
+## What is Superseed?
 
-Read [What is Superseed?](https://www.notion.so/What-is-Superseed-29a6dbf31dd341edabd02cf71a08385f?pvs=21)
+Superseed is a network that transforms Ethereum scaling into self-repaying loans.
 
-## **Ethereum Layer 2**
+We believe in Ethereum's ability to enable financial freedom. Superseed extends this by maximizing capital efficiency, returning 100% of protocol revenue to our users.
 
-***What is a Layer 2 blockchain?***
+With Superseed, you access yield at zero percent interest, with loans repaid effortlessly through protocol-generated fees, including sequencer profits, CDP interest, and inflationary rewards.
+
+Superseed is an optimistic rollup, featuring a collection of components designed to enhance the onchain experience by automatically repaying loans. Key components include:
+
+- A general-purpose Ethereum Layer 2 built on the OP stack. Superseed is open-source, permissionless, and Ethereum-equivalent, enabling builders to seamlessly create using familiar tooling and infrastructure.
+- A native CDP (Collateralized Debt Position) lending platform enshrined in the rollup protocol.
+- Proof-of-Repayment: A unique programmatic reward mechanism, where every day a small percentage of the total supply of the native token is distributed through an auction mechanism. The proceeds of the auction are used to repay the loans of Supercollateral users.
+- **Dynamic Repayment Vault:** Channels protocol fees into a smart contract that systematically burns debt, stabilizing the repayment rate for Supercollateral users.
+- Supercollateral: Superseed's governance token plays a special role within the lending protocol, allowing borrowers who meet safety requirements (e.g., a collateralization ratio of 500%) to secure loans without interest. All fees generated across the network are used to burn the debt of Supercollateral borrowers.
+- The Superseed Stablecoin: An overcollateralized stablecoin is generated when users borrow against their assets on the native lending platform. To ensure stability, the protocol mandates that the value of the collateral must exceed 150% of the stablecoin's value.
+
+## Ethereum Layer 2
+
+**_What is a Layer 2 blockchain?_**
 
 A Layer 2 blockchain is a protocol built on top of a Layer 1 blockchain network, aimed at improving scalability and performance while maintaining security. Layer 2 protocols inherit security from Layer 1 by recording transaction data and final settlement on the base layer. Their primary purpose is to enhance scalability and efficiency by processing transactions off-chain, resulting in faster processing times and lower fees, while preserving the security and decentralization of the underlying blockchain.
 
-## **Optimistic Rollup**
+## Optimistic Rollup
 
-***What is an Optimistic Rollup?***
+**_What is an Optimistic Rollup?_**
 
 Optimistic Rollups are Layer 2 scaling solutions that bundle (or "roll up") numerous off-chain transactions into a single batch, which is then submitted to the Layer 1 Ethereum blockchain. Optimistic Rollups operate on the principle of optimism – where transactions are assumed to be valid and only fully verified if challenged. This approach allows for increased transaction throughput and reduced gas fees while maintaining the security guarantees of the Ethereum mainnet through periodic commitments and the option for users to dispute fraudulent activity.
 
-***Why choose Optimistic Rollups?***
+**_Why choose Optimistic Rollups?_**
 
 In the landscape of Layer 2 scaling solutions, Superseed has opted for Optimistic Rollups over zkEVMs for their balance of security and simplicity. While zkEVMs offer robust security mirroring the base chain, they often entail a steeper learning curve and increased complexity, heightening the risk of bugs and system failures. Optimistic Rollups, conversely, introduce less complexity, aligning with our goal for a developer-friendly environment. Moreover, the potential future integration of ZK-Proofs within Optimistic Rollups promises enhanced security without compromising on the system's inherent simplicity.
 
-## **The OP Stack**
+## The OP Stack
 
-***Why choose the OP Stack?***
+**_Why choose the OP Stack?_**
 
-The OP Stack is chosen for its foundational philosophy of simplicity and modularity, which aligns with our commitment to building a user-friendly and reliable system. Its design minimizes complexity, reducing the likelihood of bugs and system failures. Additionally, its modular nature allows for easy updates and the integration of new technologies, like ZK-Proofs. This approach future-proofs our platform while ensuring security and efficiency.
+The OP Stack is chosen for its foundational philosophy of simplicity and modularity, which aligns with our commitment to building a user-friendly and reliable system. Its design minimizes complexity, reducing the likelihood of bugs and system failures. Additionally, its modular nature allows for easy updates and the integration of new technologies, like ZK-Proofs. 
+This approach future-proofs our platform while ensuring security and efficiency.
 
-💡
-
-We are building our Testnet on top of the [Bedrock release(opens in a new tab)](https://blog.oplabs.co/introducing-optimism-bedrock/) of the OP Stack.
-
-## **Design Principles**
+## Design Principles
 
 We adopt the OP Stack's design principles because, as builders, we know they work and strongly align with our values.
 
-ℹ️
-
-You can find the Optimism Design Philosophy [here(opens in a new tab)](https://community.optimism.io/docs/protocol/1-design-philosophy/).
+You can find the Optimism Design Philosophy [here(opens in a new tab)](https://community.optimism.io/docs/protocol/1-design-philosophy/).
