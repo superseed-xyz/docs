@@ -6,10 +6,26 @@ const withNextra = require('nextra')({
       {
         source: '/',
         destination: '/start-here',
-        permanent: true, // Set to true for a 308 permanent redirect, or false for a 307 temporary redirect
+        permanent: true, // For SEO benefits, use 308 for permanent redirects
+        // Use 308 for permanent redirects, 307 for temporary, based on your needs
       },
     ];
   },
-})
+});
 
-module.exports = withNextra()
+module.exports = withNextra();
+
+// Optionally, you can add environment-specific redirects:
+const isProd = process.env.NODE_ENV === 'production';
+
+module.exports = withNextra({
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: isProd ? '/start-here' : '/dev-start',
+        permanent: true,
+      },
+    ];
+  },
+});
