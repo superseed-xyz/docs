@@ -152,8 +152,8 @@ const config: DocsThemeConfig = {
     text: (
       <span>
         {new Date().getFullYear()} ©{" "}
-        <a href="https://arkantum.com" target="_blank">
-          Arkantum Labs
+        <a href="https://www.superseed.xyz" target="_blank">
+          Superseed Foundation
         </a>
         .
       </span>
