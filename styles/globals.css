@@ -8,3 +8,8 @@ ul.nextra-menu-desktop > li.open > button {
   filter: contrast(3);
   transition: 250ms;
 }
+
+a[href="/build-on-superseed"] {
+  filter: contrast(3);
+  font-weight: 600;
+}
