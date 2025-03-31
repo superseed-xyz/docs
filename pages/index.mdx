@@ -1,17 +1,16 @@
 import { Cards, Card } from "nextra/components";
 import {
-  PiChatCircleDotsDuotone,
-  PiCircuitryDuotone,
-  PiGraphDuotone,
-  PiListMagnifyingGlassDuotone,
-  PiUserCircleGearDuotone,
-  PiShareNetworkDuotone,
-  PiScrollDuotone,
-  PiCurrencyEthDuotone,
-  PiComputerTowerDuotone,
-  PiCompassDuotone,
-  PiHandCoinsDuotone,
-  Pi,
+    PiCircuitryDuotone,
+    PiGraphDuotone,
+    PiListMagnifyingGlassDuotone,
+    PiUserCircleGearDuotone,
+    PiShareNetworkDuotone,
+    PiCurrencyEthDuotone,
+    PiComputerTowerDuotone,
+    PiCompassDuotone,
+    PiHandCoinsDuotone,
+    PiBridgeDuotone,
+    PiPolygonDuotone
 } from "react-icons/pi";
 import { GoBook } from "react-icons/go";
 
@@ -34,6 +33,26 @@ Find guides, tools, endpoints, and resources to help you build your project on S
 <br />
 
 # Quick Links
+
+## For Users
+
+<Cards>
+    <Card
+        icon={<PiUserCircleGearDuotone size={32} />}
+        title=" Add to Wallet"
+        href="/using-superseed"
+    />
+    <Card
+        icon={<PiBridgeDuotone size={32} />}
+        title=" Bridges"
+        href="/integrations/bridges"
+    />
+    <Card
+        icon={<PiPolygonDuotone size={32} />}
+        title=" Explorers"
+        href="/integrations/block-explorers"
+    />
+</Cards>
 
 ## For Builders
 
@@ -62,16 +81,6 @@ Find guides, tools, endpoints, and resources to help you build your project on S
     icon={<PiHandCoinsDuotone size={32} />}
     title=" Faucets"
     href="/integrations/faucets"
-  />
-</Cards>
-
-## For Users
-
-<Cards>
-  <Card
-    icon={<PiUserCircleGearDuotone size={32} />}
-    title=" Add to Wallet"
-    href="/using-superseed"
   />
 </Cards>
 
