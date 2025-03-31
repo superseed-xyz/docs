@@ -15,8 +15,8 @@ import "@nomiclabs/hardhat-ethers";
 const config: HardhatUserConfig = {
   networks: {   
     // For Superseed Sepolia Testnet
-    "superseed-sepolia": {
-      url: "https://sepolia.superseed.xyz",
+    "superseed": {
+      url: "https://mainnet.superseed.xyz",
       accounts: [process.env.PRIVATE_KEY as string],
       gasPrice: 1000000000,
     },
