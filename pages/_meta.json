@@ -6,6 +6,9 @@
   "index": {
     "title": "Getting Started"
   },
+  "seeds": {
+    "title": "Seeds"
+  },
   "core-concepts": {
     "title": "Core Concepts"
   },
