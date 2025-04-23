@@ -18,4 +18,84 @@ For more details on how to use the Pyth feeds, visit the [Pyth Network Price Fee
 - [Mainnet](https://docs.pyth.network/price-feeds/contract-addresses/evm#mainnets)
 - [Sepolia Testnet](https://docs.pyth.network/price-feeds/contract-addresses/evm#testnets)
 
+## [DIA](https://www.diadata.org/)
+
+DIA is a cross-chain oracle provider that sources granular market data from diverse exchanges, including CEXs and DEXs. Its data sourcing is thorough, enabling unparalleled transparency and customizability for resilient price feeds for 20,000+ assets. Its versatile data processing and delivery ensures adaptability and reliability for any decentralized application.
+
+### Oracle Details
+
+| Chain   | Address                                                                                                                                 |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Mainnet | [0xF526dC0D2B73488d32b58E55C17Cef5a53AD002A](https://explorer.superseed.xyz/address/0xF526dC0D2B73488d32b58E55C17Cef5a53AD002A)         |
+| Testnet | [0x6f021bF081840F96bdd90fd756b700072C7E68A5](https://sepolia-explorer.superseed.xyz/address/0x6f021bF081840F96bdd90fd756b700072C7E68A5) |
+
+### Oracle Configuration
+
+| Parameter                         | Value                                                                                                                 |
+| --------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| Pricing Methodology               | [MAIR](https://nexus.diadata.org/reference/pricing-methodologies/mair-moving-average-with-interquartile-range-filter) |
+| Deviation (%) & Refresh Frequency | 0.5% and 120 seconds                                                                                                  |
+| Heartbeat                         | 24h                                                                                                                   |
+
+### Asset Feeds
+
+#### Mainnet
+
+| Asset Ticker | Adapter Address                                                                                                                 | Asset Markets Overview                                                                                       |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| WETH         | [0xAdEfc2264c21A05D3f83bf7694438F81E119620B](https://explorer.superseed.xyz/address/0xAdEfc2264c21A05D3f83bf7694438F81E119620B) | [WETH markets](https://www.diadata.org/app/price/asset/Ethereum/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/) |
+| cbBTC        | [0x7F760344c9Cde8DD342120FA0F908CE0Cd42B1E6](https://explorer.superseed.xyz/address/0x7F760344c9Cde8DD342120FA0F908CE0Cd42B1E6) | [cbBTC markets](https://www.diadata.org/app/price/asset/Base/0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf/)    |
+
+#### Testnet
+
+| Asset Ticker | Adapter Address                                                                                                                         | Asset Markets Overview                                                                                       |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| WETH         | [0xA09A4e4297a06e284a4ACdf2Ca1F9998d5280F6e](https://sepolia-explorer.superseed.xyz/address/0xA09A4e4297a06e284a4ACdf2Ca1F9998d5280F6e) | [WETH markets](https://www.diadata.org/app/price/asset/Ethereum/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/) |
+| cbBTC        | [0x61790e8F9bf02E4272E273F2615eD4fc7d8F95D9](https://sepolia-explorer.superseed.xyz/address/0x61790e8F9bf02E4272E273F2615eD4fc7d8F95D9) | [cbBTC markets](https://www.diadata.org/app/price/asset/Base/0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf/)    |
+
+### How to Access Data
+
+#### Accessing the oracle on-chain (Solidity)
+
+To consume price data, you’ll need to invoke the `getValue` method on the oracle contract which you can access through the [DIA Oracle library](https://nexus.diadata.org/how-to-guides/fetch-price-data/solidity#using-solidity-library) or the [interface](https://nexus.diadata.org/how-to-guides/fetch-price-data/solidity#using-diaoraclev2-interface).
+
+Below is an example of a contract consuming data from our oracle on Sepolia testnet. If you pass `WETH/USD` as the key, it will return the most recent price of WETH in USD with 8 decimal places (e.g. 177101990135 is $1,771.01990135) along with the Unix timestamp of the last price update.
+
+```solidity
+pragma solidity ^0.8.13;
+
+interface IDIAOracleV2 {
+    function getValue(string memory) external view returns (uint128,
+             uint128);
+}
+
+contract DIAOracleSample {
+
+    address immutable ORACLE = 0x6f021bF081840F96bdd90fd756b700072C7E68A5;
+
+    function getPrice(string memory key)
+    external
+    view
+    returns (
+        uint128 latestPrice,
+        uint128 timestampOflatestPrice
+    ) {
+        (latestPrice, timestampOflatestPrice) =
+                 IDIAOracleV2(ORACLE).getValue(key);
+    }
+}
+```
+
+See the full example [here](https://nexus.diadata.org/how-to-guides/fetch-price-data/solidity).
+
+#### Adapter contracts
+
+To consume price data from our oracle, you can use the adapter smart contract located above at the adapter address for each asset. This will allow you to access the same methods on the `AggregatorV3Interface` such as `getRoundData` & `latestRoundData`. You can learn more [here](https://nexus.diadata.org/how-to-guides/migrate-to-dia).
+
+### Support
+
+For developer assistance, connect with the DIA team directly on [Discord](https://discord.gg/ZvGjVY5uvs) or [Telegram](https://t.me/diadata_org).
+
+Developers seeking other specialized, production-grade oracle with tailored price feeds and configurations can initiate the request by [contacting the DIA BD Team via Telegram](https://t.me/diabdteam).
+
 ---
