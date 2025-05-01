@@ -13,8 +13,5 @@
   },
   "dynamic-repayment-vaults": {
     "title": "Repayment Vaults"
-  },
-  "tokenomics": {
-    "title": "Tokenomics"
   }
 }

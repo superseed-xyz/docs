@@ -6,6 +6,9 @@
   "index": {
     "title": "Getting Started"
   },
+  "token": {
+    "title": "Token"
+  },
   "seeds": {
     "title": "Seeds"
   },
