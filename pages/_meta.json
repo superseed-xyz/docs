@@ -6,6 +6,9 @@
   "index": {
     "title": "Getting Started"
   },
+  "bridges": {
+    "title": "Bridges"
+  },
   "token": {
     "title": "Token"
   },
@@ -14,6 +17,13 @@
   },
   "core-concepts": {
     "title": "Core Concepts"
+  },
+  "-- Users": {
+    "type": "separator",
+    "title": "Users"
+  },
+  "using-superseed": {
+    "title": "Add to Wallet"
   },
   "-- Builders": {
     "type": "separator",
@@ -24,16 +34,6 @@
   },
   "integrations": {
     "title": "Integrations"
-  },
-  "tokens": {
-    "title": "Tokens"
-  },
-  "-- Users": {
-    "type": "separator",
-    "title": "Users"
-  },
-  "using-superseed": {
-    "title": "Add to Wallet"
   },
   "-- Resources": {
     "type": "separator",
