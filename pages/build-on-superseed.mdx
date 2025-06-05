@@ -1,5 +1,5 @@
 import { Callout, Steps } from "nextra/components";
-import { Cards, Card } from "nextra/components";
+import { Cards } from "nextra/components";
 import { PiCurrencyEthDuotone } from "react-icons/pi";
 import { FaMoneyBillTransfer } from "react-icons/fa6";
 import { MdCompare } from "react-icons/md";
@@ -10,22 +10,22 @@ import { GiMeshBall } from "react-icons/gi";
 ---
 
 <Cards>
-  <Card
+  <Cards.Card
     icon={<GiMeshBall size={32} />}
     title=" Network Information"
     href="/build-on-superseed/network-information"
   />
-  <Card
+  <Cards.Card
     icon={<PiCurrencyEthDuotone size={32} />}
     title=" Contract Addresses"
     href="/build-on-superseed/contract-addresses"
   />
-  <Card
+  <Cards.Card
     icon={<FaMoneyBillTransfer size={32} />}
     title=" Transaction Fees"
     href="/build-on-superseed/transaction-fees"
   />
-  <Card
+  <Cards.Card
     icon={<MdCompare size={32} />}
     title=" Differences compared to Ethereum"
     href="/build-on-superseed/differences-compared-to-ethereum"

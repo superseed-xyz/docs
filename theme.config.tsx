@@ -135,21 +135,21 @@ const config: DocsThemeConfig = {
     link: "https://discord.gg/vjDDB5S4BN",
   },
   editLink: {
-    text: "Edit this page on GitHub →",
+    content: "Edit this page on GitHub →",
   },
   feedback: {
     content: "Submit an issue on Github →",
     labels: "feedback",
   },
   docsRepositoryBase: "https://github.com/superseed-xyz/docs/tree/main",
-  useNextSeoProps: () => ({ titleTemplate: "%s - Superseed Docs" }),
+  // useNextSeoProps: () => ({ titleTemplate: "%s - Superseed Docs" }), // TODO find replacement
   head: (
     <>
       <link rel="favicon" href="favicon/favicon.ico" />
     </>
   ),
   footer: {
-    text: (
+    content: (
       <span>
         {new Date().getFullYear()} ©{" "}
         <a href="https://www.superseed.xyz" target="_blank">
