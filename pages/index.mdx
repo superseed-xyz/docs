@@ -1,18 +1,18 @@
-import { Cards, Card } from "nextra/components";
+import { Cards } from "nextra/components";
 import {
-    PiCircuitryDuotone,
-    PiGraphDuotone,
-    PiListMagnifyingGlassDuotone,
-    PiUserCircleGearDuotone,
-    PiShareNetworkDuotone,
-    PiCurrencyEthDuotone,
-    PiComputerTowerDuotone,
-    PiCompassDuotone,
-    PiHandCoinsDuotone,
-    PiBridgeDuotone,
-    PiPolygonDuotone,
-    PiLegoDuotone,
-    PiCoinsDuotone
+  PiCircuitryDuotone,
+  PiGraphDuotone,
+  PiListMagnifyingGlassDuotone,
+  PiUserCircleGearDuotone,
+  PiShareNetworkDuotone,
+  PiCurrencyEthDuotone,
+  PiComputerTowerDuotone,
+  PiCompassDuotone,
+  PiHandCoinsDuotone,
+  PiBridgeDuotone,
+  PiPolygonDuotone,
+  PiLegoDuotone,
+  PiCoinsDuotone,
 } from "react-icons/pi";
 import { GoBook } from "react-icons/go";
 
@@ -22,75 +22,76 @@ Welcome to the Superseed Docs, your go-to resource for all technical details and
 
 Find guides, tools, endpoints, and resources to help you build your project on Superseed.
 
-<br/>
+<br />
 <Cards>
-  <Card
+  <Cards.Card
     title="Learn about Superseed"
     icon={<GoBook size={32} />}
     href="/core-concepts/what-is-superseed"
   />
-  <Card
+  <Cards.Card
     title="$SUPR Token"
     icon={<PiCoinsDuotone size={32} />}
     href="/token/supr-token"
   />
 </Cards>
-<br/>
-<hr/>
+<br />
+<hr />
 
 # Quick Links
 
 ## For Users
 
 <Cards>
-    <Card
-        icon={<PiUserCircleGearDuotone size={32} />}
-        title=" Add to Wallet"
-        href="/using-superseed"
-    />
-    <Card
-        icon={<PiBridgeDuotone size={32} />}
-        title=" Bridges"
-        href="/integrations/bridges"
-    />
-    <Card
-        icon={<PiPolygonDuotone size={32} />}
-        title=" Explorers"
-        href="/integrations/block-explorers"
-    />
+  <Cards.Card
+    icon={<PiUserCircleGearDuotone size={32} />}
+    title=" Add to Wallet"
+    href="/using-superseed"
+  />
+  <Cards.Card
+    icon={<PiBridgeDuotone size={32} />}
+    title=" Bridges"
+    href="/bridges"
+  />
+  <Cards.Card
+    icon={<PiPolygonDuotone size={32} />}
+    title=" Explorers"
+    href="/integrations/block-explorers"
+  />
 </Cards>
 
 ## For Builders
 
 <Cards>
-  <Card
+  <Cards.Card
     icon={<PiCurrencyEthDuotone size={32} />}
     title=" Contract Addresses"
     href="/build-on-superseed/contract-addresses"
   />
-  <Card
+  <Cards.Card
     icon={<PiShareNetworkDuotone size={32} />}
     title=" Network Information"
     href="/build-on-superseed/network-information"
   />
-  <Card
+  <Cards.Card
     icon={<PiComputerTowerDuotone size={32} />}
     title=" RPC Node Providers"
     href="/integrations/rpc-node-providers"
   />
-  <Card
+  <Cards.Card
     icon={<PiCompassDuotone size={32} />}
     title=" Block Explorers"
     href="/integrations/block-explorers"
   />
-  <Card
+  <Cards.Card
     icon={<PiHandCoinsDuotone size={32} />}
     title=" Faucets"
     href="/integrations/faucets"
   />
-  <Card
+  <Cards.Card
     icon={<PiGraphDuotone size={32} />}
     title=" Superseed Node"
+    target="_blank"
     arrow={true}
     href="https://github.com/superseed-xyz/node"
   />
@@ -99,17 +100,17 @@ Find guides, tools, endpoints, and resources to help you build your project on S
 ## Introduction
 
 <Cards>
-  <Card
+  <Cards.Card
     icon={<PiCircuitryDuotone size={32} />}
     title=" About Superseed"
     href="/core-concepts/what-is-superseed"
   />
-  <Card
+  <Cards.Card
     icon={<PiLegoDuotone size={32} />}
     title="Supercollateral"
     href="/core-concepts/supercollateral"
   />
-  <Card
+  <Cards.Card
     icon={<PiListMagnifyingGlassDuotone size={32} />}
     title=" CDP Protocol"
     href="/core-concepts/cdp-protocol"
