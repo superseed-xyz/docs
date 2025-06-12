@@ -10,6 +10,7 @@ updates:
     target-branch: "dev" # Target branch for PRs
     schedule:
       interval: "weekly"
+    open-pull-requests-limit: 5
   
   - package-ecosystem: "github-actions"
     # Workflow files stored in the default location of `.github/workflows`. (You don't need to specify `/.github/workflows` for `directory`. You can use `directory: "/"`.)
@@ -17,3 +18,4 @@ updates:
     target-branch: "dev" # Target branch for PRs
     schedule:
       interval: "weekly"
+    open-pull-requests-limit: 5
