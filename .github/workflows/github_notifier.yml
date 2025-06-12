@@ -6,7 +6,7 @@ on:
 
 jobs:
   notify:
-    runs-on: ubuntu:25.10
+    runs-on: ubuntu-22.04
     steps:
       - name: Notify Slack
         uses: rtCamp/action-slack-notify@v2
