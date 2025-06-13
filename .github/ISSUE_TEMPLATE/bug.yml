@@ -1,0 +1,23 @@
+---
+name: Bug: Docs broken or outdated
+about: File a bug about something that is not working or misleading in docs.
+title: "[Bug] "
+labels: [type: bug]
+assignees: []
+---
+**Summary**
+A clear and concise description of what’s wrong.
+
+**Steps to Reproduce / Location**
+1. Go to /some/page
+2. See broken link or missing section
+
+**Expected Behavior**
+What you expected to find.
+
+**Screenshots / Link**
+(Optional) Screenshot or link.
+
+**Environment**
+- Browser & version:
+- OS:
