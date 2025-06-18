@@ -1,7 +1,9 @@
-name: Notify Slack on PR
+name: Notify Slack on PR or Issue
 
 on:
   pull_request:
+    types: [opened]
+  issues:
     types: [opened]
 
 jobs:
@@ -13,6 +15,8 @@ jobs:
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
           SLACK_MESSAGE: >
-            PR *#${{ github.event.pull_request.number }}* _${{ github.event.pull_request.title }}_ by *${{ github.actor }}*
-            was *${{ github.event.action }}*.
-          SLACK_COLOR: ${{ github.event.action == 'closed' && 'good' || 'warning' }}
+            ${{ github.event_name == 'pull_request' && 
+              format('PR *#{}* _{}_ by *{}* was *{}*.', github.event.pull_request.number, github.event.pull_request.title, github.actor, github.event.action) ||
+              format('Issue *#{}* _{}_ by *{}* was *{}*.', github.event.issue.number, github.event.issue.title, github.actor, github.event.action)
+            }}
+          SLACK_COLOR: ${{ github.event_name == 'pull_request' && 'warning' || 'good' }}
