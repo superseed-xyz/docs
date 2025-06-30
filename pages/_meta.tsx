@@ -2,6 +2,9 @@ export default {
   index: {
     title: "Getting Started",
   },
+  seeds: {
+    title: "Seeds"
+  },
   bridges: {
     title: "Bridges",
   },
