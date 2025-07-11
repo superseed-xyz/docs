@@ -11,8 +11,8 @@ export default {
   "data-providers": {
     title: "Data Providers",
   },
-  oracles: {
-    title: "Oracles",
+  "price-feed": {
+    title: "Price Feed",
   },
   clients: {
     title: "Clients",
