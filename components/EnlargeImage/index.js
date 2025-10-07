@@ -1,4 +1,6 @@
-import { useState } from 'react';
+"use client";
+
+import { useState } from "react";
 
 export default function EnlargeImage({ src, alt }) {
   const [isOpen, setIsOpen] = useState(false);

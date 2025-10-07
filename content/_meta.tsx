@@ -41,7 +41,6 @@ export default {
   "brand-kit_link": {
     title: "Brand Kit ↗",
     href: "https://github.com/superseed-xyz/brand-kit",
-    newWindow: true,
   },
   introduction: {
     title: "Introduction",
@@ -51,12 +50,10 @@ export default {
     title: "Built on the OP Stack ↗",
     type: "page",
     href: "https://stack.optimism.io/",
-    newWindow: true,
   },
   contact: {
     title: "Contact ↗",
     type: "page",
     href: "mailto:gm@superseed.xyz",
-    newWindow: true,
   },
 };
