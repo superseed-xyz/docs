@@ -1,5 +1,5 @@
 import React from "react";
-import { DocsThemeConfig, Navbar } from "nextra-theme-docs";
+import { Navbar } from "nextra-theme-docs";
 
 const logo = (
   <svg
@@ -126,7 +126,7 @@ const logo = (
   </svg>
 );
 
-const config: DocsThemeConfig = {
+const config = {
   navbar: (
     <Navbar
       logo={logo}
