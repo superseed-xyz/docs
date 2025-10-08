@@ -1,3 +1,10 @@
+:root {
+  --nextra-primary-hue: 204;
+  --nextra-primary-saturation: 100%;
+  --nextra-primary-lightness: 55%;
+  --nextra-bg: 17, 17, 17;
+}
+
 ul.nextra-menu-desktop > li.open > button {
   font-weight: 600;
   margin: 0.25rem 0 0.125rem 0;
@@ -9,3 +16,17 @@ a[href="/build-on-superseed"] {
   filter: contrast(3);
   font-weight: 600;
 }
+
+a {
+  transition: color 150ms ease-in-out;
+}
+
+a:hover,
+a:focus-visible {
+  color: white;
+}
+
+a:active {
+  color: white;
+}
+
