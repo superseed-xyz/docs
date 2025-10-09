@@ -11,7 +11,7 @@ export default function CopyButton({ text }) {
 
   return (
     <button onClick={handleCopy} aria-label="Copy text">
-      <CopyIcon size={16} />
+      <CopyIcon className="w-4 h-4" />
     </button>
   )
 }
