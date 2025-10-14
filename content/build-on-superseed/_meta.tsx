@@ -12,8 +12,7 @@ export default {
     title: "Differences compared to Ethereum",
   },
   "deploy-superseed-node_link": {
-    title: "Run you own Node↗",
+    title: "Run you own Node",
     href: "https://github.com/superseed-xyz/node",
-    newWindow: true,
   },
 };

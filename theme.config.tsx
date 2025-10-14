@@ -1,5 +1,5 @@
 import React from "react";
-import { DocsThemeConfig } from "nextra-theme-docs";
+import { Navbar } from "nextra-theme-docs";
 
 const logo = (
   <svg
@@ -126,44 +126,34 @@ const logo = (
   </svg>
 );
 
-const config: DocsThemeConfig = {
-  logo,
-  project: {
-    link: "https://github.com/superseed-xyz",
-  },
-  chat: {
-    link: "https://discord.gg/vjDDB5S4BN",
-  },
-  editLink: {
-    content: "Edit this page on GitHub →",
-  },
+const config = {
+  navbar: (
+    <Navbar
+      logo={logo}
+      projectLink="https://github.com/superseed-xyz"
+      chatLink="https://discord.gg/vjDDB5S4BN"
+    />
+  ),
+  editLink: "Edit this page on GitHub →",
   feedback: {
     content: "Submit an issue on Github →",
     labels: "feedback",
   },
   docsRepositoryBase: "https://github.com/superseed-xyz/docs/tree/main",
-  // useNextSeoProps: () => ({ titleTemplate: "%s - Superseed Docs" }), // TODO find replacement
-  head: (
-    <>
-      <link rel="favicon" href="favicon/favicon.ico" />
-    </>
+  footer: (
+    <span>
+      {new Date().getFullYear()} ©{" "}
+      <a href="https://www.superseed.xyz" target="_blank">
+        Superseed Foundation
+      </a>
+      .
+    </span>
   ),
-  footer: {
-    content: (
-      <span>
-        {new Date().getFullYear()} ©{" "}
-        <a href="https://www.superseed.xyz" target="_blank">
-          Superseed Foundation
-        </a>
-        .
-      </span>
-    ),
-  },
   sidebar: {
     toggleButton: true,
   },
   toc: {
-    backToTop: true,
+    backToTop: "Back to top",
   },
 };
 
