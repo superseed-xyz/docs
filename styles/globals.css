@@ -6,8 +6,12 @@
   --nextra-primary-hue: 204;
   --nextra-primary-saturation: 100%;
   --nextra-primary-lightness: 55%;
-  --nextra-bg: 17, 17, 17;
+  --nextra-bg: 255, 255, 255;
   --nextra-content-width: 90rem;
+}
+
+html.dark {
+  --nextra-bg: 17, 17, 17;
 }
 
 ul.nextra-menu-desktop > li.open > button {
@@ -29,4 +33,3 @@ a:focus-visible {
 a:active {
   color: white;
 }
-
