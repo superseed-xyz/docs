@@ -25,11 +25,14 @@ a {
   transition: color 150ms ease-in-out;
 }
 
-a:hover,
-a:focus-visible {
-  color: white;
+html:not(.dark) a:hover,
+html:not(.dark) a:focus-visible,
+html:not(.dark) a:active {
+  color: #0f172a;
 }
 
-a:active {
+html.dark a:hover,
+html.dark a:focus-visible,
+html.dark a:active {
   color: white;
 }
