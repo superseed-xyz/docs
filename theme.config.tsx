@@ -134,9 +134,9 @@ const config = {
       chatLink="https://discord.gg/vjDDB5S4BN"
     />
   ),
-  editLink: "Edit this page on GitHub →",
+  editLink: "Edit this page on GitHub",
   feedback: {
-    content: "Submit an issue on Github →",
+    content: "Submit an issue on Github",
     labels: "feedback",
   },
   docsRepositoryBase: "https://github.com/superseed-xyz/docs/tree/main",

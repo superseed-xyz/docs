@@ -39,7 +39,7 @@ export default {
     title: "FAQ",
   },
   "brand-kit_link": {
-    title: "Brand Kit ↗",
+    title: "Brand Kit",
     href: "https://github.com/superseed-xyz/brand-kit",
   },
   introduction: {
@@ -47,12 +47,12 @@ export default {
     type: "page",
   },
   "op-stack": {
-    title: "Built on the OP Stack ↗",
+    title: "Built on the OP Stack",
     type: "page",
     href: "https://stack.optimism.io/",
   },
   contact: {
-    title: "Contact ↗",
+    title: "Contact",
     type: "page",
     href: "mailto:gm@superseed.xyz",
   },
