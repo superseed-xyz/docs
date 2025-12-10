@@ -36,3 +36,57 @@ html.dark a:focus-visible,
 html.dark a:active {
   color: white;
 }
+
+.navbar-links-container {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar-link {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+  color: #6b7280;
+}
+
+.navbar-link:hover {
+  color: #111827;
+}
+
+.navbar-link.active {
+  color: hsl(204, 100%, 55%);
+}
+
+html.dark .navbar-link {
+  color: #9ca3af;
+}
+
+html.dark .navbar-link:hover {
+  color: #f3f4f6;
+}
+
+html.dark .navbar-link.active {
+  color: hsl(204, 100%, 65%);
+}
+
+.mobile-navbar-links-container {
+  display: contents;
+}
+
+.mobile-navbar-links-container li {
+  list-style: none;
+}
+
+.mobile-navbar-links-container .navbar-link {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
