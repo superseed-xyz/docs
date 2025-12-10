@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar } from "nextra-theme-docs";
+import { NavbarLinks } from "./components/NavbarLinks";
 
 const logo = (
   <svg
@@ -132,7 +133,10 @@ const config = {
       logo={logo}
       projectLink="https://github.com/superseed-xyz"
       chatLink="https://discord.gg/vjDDB5S4BN"
-    />
+      align="left"
+    >
+      <NavbarLinks />
+    </Navbar>
   ),
   editLink: "Edit this page on GitHub →",
   feedback: {
