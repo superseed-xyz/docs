@@ -1,14 +1,15 @@
 "use client";
 
 import type { ReactNode } from "react";
-import type { DocsThemeConfig, PageMapItem } from "nextra-theme-docs";
+type PageMapItem = any;
 import { Layout } from "nextra-theme-docs";
 import { usePathname } from "next/navigation";
 import { useMemo } from "react";
 
 type DocsLayoutProps = {
   pageMap: PageMapItem[];
-  themeConfig: DocsThemeConfig;
+  // theme config shape varies by nextra version; accept any
+  themeConfig: any;
   children: ReactNode;
 };
 
@@ -26,7 +27,7 @@ function filterPageMapBySection(
 
     for (const item of items) {
       const matches = item.route?.startsWith(prefix);
-      
+
       // If this is the parent section item (e.g., route === "/chain" or "/protocol"),
       // extract its children directly instead of keeping the parent
       if (item.route === prefix || item.route === `${prefix}/`) {
@@ -56,7 +57,11 @@ function filterPageMapBySection(
   return filterItems(pageMap);
 }
 
-export function DocsLayout({ pageMap, themeConfig, children }: DocsLayoutProps) {
+export function DocsLayout({
+  pageMap,
+  themeConfig,
+  children,
+}: DocsLayoutProps) {
   const pathname = usePathname();
   // Default to "chain" for root path, otherwise determine by pathname
   const section = pathname?.startsWith("/protocol")
@@ -76,4 +81,3 @@ export function DocsLayout({ pageMap, themeConfig, children }: DocsLayoutProps) 
     </Layout>
   );
 }
-
