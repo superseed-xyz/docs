@@ -12,6 +12,13 @@
 
 html.dark {
   --nextra-bg: 17, 17, 17;
+  color-scheme: dark;
+}
+
+html,
+body,
+#__next {
+  background-color: rgb(var(--nextra-bg));
 }
 
 ul.nextra-menu-desktop > li.open > button {
