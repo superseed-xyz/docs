@@ -32,6 +32,9 @@ export default {
     type: "separator",
     title: "Resources",
   },
+  links: {
+    title: "Links",
+  },
   security: {
     title: "Security",
   },
