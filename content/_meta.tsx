@@ -42,14 +42,13 @@ export default {
     title: "Brand Kit",
     href: "https://github.com/superseed-xyz/brand-kit",
   },
+  "op-stack_link": {
+    title: "Built on the OP Stack",
+    href: "https://stack.optimism.io/",
+  },
   introduction: {
     title: "Introduction",
     type: "page",
-  },
-  "op-stack": {
-    title: "Built on the OP Stack",
-    type: "page",
-    href: "https://stack.optimism.io/",
   },
   contact: {
     title: "Contact",
