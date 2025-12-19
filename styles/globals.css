@@ -12,6 +12,13 @@
 
 html.dark {
   --nextra-bg: 17, 17, 17;
+  color-scheme: dark;
+}
+
+html,
+body,
+#__next {
+  background-color: rgb(var(--nextra-bg));
 }
 
 ul.nextra-menu-desktop > li.open > button {
@@ -35,6 +42,18 @@ html.dark a:hover,
 html.dark a:focus-visible,
 html.dark a:active {
   color: white;
+}
+
+/* Fix duplicate external link icons */
+/* Nextra automatically adds external link icons, so we hide duplicates */
+a[target="_blank"] svg:nth-of-type(n + 2),
+a[href^="http"]:not([href*="docs.superseed.xyz"]):not([href*="localhost"])
+  svg:nth-of-type(n + 2),
+a[target="_blank"] span svg:nth-of-type(n + 2),
+a[href^="http"]:not([href*="docs.superseed.xyz"]):not([href*="localhost"])
+  span
+  svg:nth-of-type(n + 2) {
+  display: none !important;
 }
 
 .navbar-links-container {

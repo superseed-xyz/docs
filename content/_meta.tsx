@@ -1,5 +1,10 @@
 export default {
   index: {
-    title: "Home",
+    title: "Getting Started",
   },
+  links: {
+    title: "Links",
+  },
+  chain: "Chain",
+  protocol: "Protocol",
 };
