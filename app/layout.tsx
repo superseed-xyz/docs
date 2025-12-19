@@ -28,7 +28,7 @@ export default async function RootLayout({
   const pageMap = await getPageMap();
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
         <DocsProvider>
           <DocsLayout pageMap={pageMap} themeConfig={themeConfig}>
