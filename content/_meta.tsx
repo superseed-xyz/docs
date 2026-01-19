@@ -1,10 +1,11 @@
 export default {
   index: {
-    title: "Getting Started",
+    title: 'About Us',
   },
   links: {
-    title: "Links",
+    title: 'Links',
   },
-  chain: "Chain",
-  protocol: "Protocol",
+  chain: 'Chain',
+  protocol: 'Protocol',
+  token: 'Token',
 };

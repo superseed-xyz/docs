@@ -17,10 +17,22 @@ type DocsLayoutProps = {
 // When in a section, extracts children directly to remove the parent wrapper.
 function filterPageMapBySection(
   pageMap: PageMapItem[],
-  section: "chain" | "protocol" | null
+  section: "intro" | "chain" | "protocol" | "token" | null
 ): PageMapItem[] {
   if (!section) return pageMap;
-  const prefix = section === "protocol" ? "/protocol" : "/chain";
+
+  // For intro section, only show root-level items (index and links)
+  if (section === "intro") {
+    return pageMap.filter(
+      (item) =>
+        item.route === "/" ||
+        item.route === "/links" ||
+        item.name === "index" ||
+        item.name === "links"
+    );
+  }
+
+  const prefix = `/${section}`;
 
   const filterItems = (items: PageMapItem[]): PageMapItem[] => {
     const result: PageMapItem[] = [];
@@ -63,11 +75,15 @@ export function DocsLayout({
   children,
 }: DocsLayoutProps) {
   const pathname = usePathname();
-  // Default to "chain" for root path, otherwise determine by pathname
+  // Determine section by pathname, default to intro for root
   const section = pathname?.startsWith("/protocol")
     ? "protocol"
-    : pathname === "/" || pathname?.startsWith("/chain")
+    : pathname?.startsWith("/token")
+    ? "token"
+    : pathname?.startsWith("/chain")
     ? "chain"
+    : pathname === "/" || pathname === "/links"
+    ? "intro"
     : null;
 
   const filteredPageMap = useMemo(

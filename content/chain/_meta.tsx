@@ -2,17 +2,8 @@ export default {
   index: {
     title: "Getting Started",
   },
-  introduction: {
-    title: "Introduction",
-  },
   bridges: {
     title: "Bridges",
-  },
-  token: {
-    title: "Token",
-  },
-  "core-concepts": {
-    title: "Core Concepts",
   },
   "-- Users": {
     type: "separator",

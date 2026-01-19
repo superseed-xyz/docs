@@ -5,5 +5,8 @@ export default {
   introduction: {
     title: "Introduction",
   },
+  "core-concepts": {
+    title: "Core Concepts",
+  },
 };
 
