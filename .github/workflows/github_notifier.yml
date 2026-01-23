@@ -1,7 +1,7 @@
 name: Notify Slack on PR or Issue
 
 on:
-  pull_request:
+  pull_request_target:
     types: [opened]
   issues:
     types: [opened]
@@ -11,12 +11,14 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Notify Slack for PR
-        if: github.event_name == 'pull_request'
+        if: github.event_name == 'pull_request_target'
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
           SLACK_MESSAGE: >
-            PR *#${{ github.event.pull_request.number }}* _${{ github.event.pull_request.title }}_ by *${{ github.actor }}* was *${{ github.event.action }}*.
+            PR *#${{ github.event.pull_request.number }}*
+            _${{ github.event.pull_request.title }}_
+            by *${{ github.actor }}* was *${{ github.event.action }}*.
           SLACK_COLOR: warning
 
       - name: Notify Slack for Issue
@@ -25,5 +27,7 @@ jobs:
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
           SLACK_MESSAGE: >
-            Issue *#${{ github.event.issue.number }}* _${{ github.event.issue.title }}_ by *${{ github.actor }}* was *${{ github.event.action }}*.
+            Issue *#${{ github.event.issue.number }}*
+            _${{ github.event.issue.title }}_
+            by *${{ github.actor }}* was *${{ github.event.action }}*.
           SLACK_COLOR: good
