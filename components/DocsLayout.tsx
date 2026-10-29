@@ -17,7 +17,7 @@ type DocsLayoutProps = {
 // When in a section, extracts children directly to remove the parent wrapper.
 function filterPageMapBySection(
   pageMap: PageMapItem[],
-  section: "intro" | "chain" | "protocol" | "token" | null
+  section: "intro" | "protocol" | "token" | null
 ): PageMapItem[] {
   if (!section) return pageMap;
 
@@ -40,7 +40,7 @@ function filterPageMapBySection(
     for (const item of items) {
       const matches = item.route?.startsWith(prefix);
 
-      // If this is the parent section item (e.g., route === "/chain" or "/protocol"),
+      // If this is the parent section item (e.g., route === "/protocol" or "/token"),
       // extract its children directly instead of keeping the parent
       if (item.route === prefix || item.route === `${prefix}/`) {
         if ("children" in item && Array.isArray(item.children)) {
@@ -80,8 +80,6 @@ export function DocsLayout({
     ? "protocol"
     : pathname?.startsWith("/token")
     ? "token"
-    : pathname?.startsWith("/chain")
-    ? "chain"
     : pathname === "/" || pathname === "/links"
     ? "intro"
     : null;

@@ -3,7 +3,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
-type DocsSection = "chain" | "protocol" | null;
+type DocsSection = "protocol" | null;
 
 interface DocsContextType {
   section: DocsSection;
@@ -18,12 +18,7 @@ export function DocsProvider({ children }: { children: React.ReactNode }) {
 
   // Determine section from pathname
   useEffect(() => {
-    if (pathname?.startsWith("/chain")) {
-      setSectionState("chain");
-      if (typeof window !== "undefined") {
-        localStorage.setItem("docs-section", "chain");
-      }
-    } else if (pathname?.startsWith("/protocol")) {
+    if (pathname?.startsWith("/protocol")) {
       setSectionState("protocol");
       if (typeof window !== "undefined") {
         localStorage.setItem("docs-section", "protocol");
@@ -32,7 +27,7 @@ export function DocsProvider({ children }: { children: React.ReactNode }) {
       // Try to restore from localStorage if on home page
       if (typeof window !== "undefined") {
         const saved = localStorage.getItem("docs-section");
-        if (saved === "chain" || saved === "protocol") {
+        if (saved === "protocol") {
           setSectionState(saved);
         }
       }
