@@ -8,7 +8,6 @@ import { usePathname } from "next/navigation";
 export function NavbarLinks() {
   const pathname = usePathname();
   const isIntro = pathname === "/" || pathname === "/links";
-  const isChain = pathname?.startsWith("/chain");
   const isProtocol = pathname?.startsWith("/protocol");
   const isToken = pathname?.startsWith("/token");
   const insertedRef = useRef(false);
@@ -31,14 +30,6 @@ export function NavbarLinks() {
                 className={`navbar-link ${isIntro ? "active" : ""}`}
               >
                 Introduction
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/chain"
-                className={`navbar-link ${isChain ? "active" : ""}`}
-              >
-                Chain
               </Link>
             </li>
             <li>
@@ -70,12 +61,6 @@ export function NavbarLinks() {
               Introduction
             </Link>
             <Link
-              href="/chain"
-              className={`navbar-link ${isChain ? "active" : ""}`}
-            >
-              Chain
-            </Link>
-            <Link
               href="/protocol"
               className={`navbar-link ${isProtocol ? "active" : ""}`}
             >
@@ -91,7 +76,7 @@ export function NavbarLinks() {
         );
       }
     },
-    [isIntro, isChain, isProtocol, isToken]
+    [isIntro, isProtocol, isToken]
   );
 
   // Desktop navbar insertion
@@ -145,7 +130,7 @@ export function NavbarLinks() {
 
       insertedRef.current = true;
     }
-  }, [pathname, isIntro, isChain, isProtocol, isToken, renderLinks]);
+  }, [pathname, isIntro, isProtocol, isToken, renderLinks]);
 
   // Mobile menu insertion
   useEffect(() => {
@@ -245,7 +230,7 @@ export function NavbarLinks() {
       clearTimeout(timeout);
       observer.disconnect();
     };
-  }, [pathname, isIntro, isChain, isProtocol, isToken, renderLinks]);
+  }, [pathname, isIntro, isProtocol, isToken, renderLinks]);
 
   return null;
 }

@@ -5,7 +5,6 @@ export default {
   links: {
     title: 'Links',
   },
-  chain: 'Chain',
   protocol: 'Protocol',
   token: 'Token',
 };
